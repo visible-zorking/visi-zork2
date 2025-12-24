@@ -1,0 +1,15 @@
+# Maps game file indexes to ZIL source code names.
+# Also some other kinds of info.
+#
+# This information was compiled manually; there is no simple way to
+# extract it from the source and game file. (Everything that could
+# be extracted automatically is handled by pyana. Which loads this info
+# to orient itself.)
+#
+# Much of this work was done by Allen Garvin et al in 2007:
+#   https://ifarchive.org/indexes/if-archive/infocom/tools/reform/
+# However, they didn't have the source code names, so I have done
+# additional work in matching up to the ZIL code.
+
+# Functions (high memory): $4B72 / 19314
+# Strings (high memory): $11AB2 / 72370
