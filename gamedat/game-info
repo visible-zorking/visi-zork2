@@ -14,9 +14,10 @@
 # Functions (high memory): $4B72 / 19314
 # Strings (high memory): $11AB2 / 72370
 
-# Source files in presentation order. The second number is the order that
-# code is generated in the game file. (Which is *not* the same order that
-# the files are included!)
+# Source files in arbitrary order. (Conventionally alphabetical, but I
+# put "crufty" last.)
+# The second number is the order that code is generated in the game file.
+# (Which is *not* the same order that the files are included!)
 SourceFile 1 zork2.zil     1
 SourceFile 2 2actions.zil  11
 SourceFile 3 2dungeon.zil  2
