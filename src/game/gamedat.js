@@ -97,6 +97,10 @@ window.gamedat_ids = {};
     gamedat_ids.LOCAL_GLOBALS = gamedat_object_names.get('LOCAL-GLOBALS').onum;
     gamedat_ids.ADVENTURER = gamedat_object_names.get('ADVENTURER').onum;
     gamedat_ids.WIZARD = gamedat_object_names.get('WIZARD').onum;
+    gamedat_ids.GENIE = gamedat_object_names.get('GENIE').onum;
+    gamedat_ids.ROBOT = gamedat_object_names.get('ROBOT').onum;
+    gamedat_ids.UNICORN = gamedat_object_names.get('UNICORN').onum;
+    gamedat_ids.PRINCESS = gamedat_object_names.get('PRINCESS').onum;
     gamedat_ids.STARTROOM = gamedat_object_names.get('INSIDE-BARROW').onum;
     gamedat_ids.PSEUDO_OBJECT = gamedat_object_names.get('PSEUDO-OBJECT').onum;
 
