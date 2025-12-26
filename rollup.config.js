@@ -4,7 +4,7 @@ import replace from '@rollup/plugin-replace';
 import terser from '@rollup/plugin-terser';
 
 const datestr = 'Dec 21, 2025'
-const release = true;
+const release = false;
 
 // See: https://rollupjs.org/configuration-options/
 
