@@ -49,7 +49,8 @@ export function sorter_for_key(key: number) : (roots:ZObject[], map:Map<number, 
 export function ObjListSorter({ followKey, setFollowKey } : { followKey:number, setFollowKey:(v:number)=>void })
 {
     return (
-        <>
-        </>
+        <div>
+            (Following Adventurer)
+        </div>
     );
 }
