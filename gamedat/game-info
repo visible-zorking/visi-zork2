@@ -281,6 +281,39 @@ Object 248 CHASM
 Object 249 LOCAL-GLOBALS
 Object 250 STREAM
 
+Attribute 0 SACREDBIT
+Attribute 1 FIGHTBIT
+Attribute 2 TOUCHBIT
+Attribute 3 WEARBIT
+Attribute 4 SEARCHBIT
+Attribute 5 NWALLBIT
+Attribute 6 NONLANDBIT
+Attribute 7 TRANSBIT
+Attribute 8 SURFACEBIT
+Attribute 9 INVISIBLE
+Attribute 10 STAGGERED
+Attribute 11 OPENBIT
+Attribute 12 RLANDBIT
+Attribute 13 TRYTAKEBIT
+Attribute 14 NDESCBIT
+Attribute 15 TURNBIT
+Attribute 16 READBIT
+Attribute 17 TAKEBIT
+Attribute 18 CONTBIT
+Attribute 19 ONBIT
+Attribute 20 FOODBIT
+Attribute 21 DRINKBIT
+Attribute 22 DOORBIT
+Attribute 23 CLIMBBIT
+Attribute 24 RMUNGBIT
+Attribute 25 FLAMEBIT
+Attribute 26 BURNBIT
+Attribute 27 VEHBIT
+Attribute 28 TOOLBIT
+Attribute 29 WEAPONBIT
+Attribute 30 ACTORBIT
+Attribute 31 LIGHTBIT
+
 Property 2 STRENGTH  INT
 Property 3 ADVFCN  RTN
 Property 4 CONTFCN  RTN
