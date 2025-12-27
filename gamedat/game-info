@@ -345,9 +345,42 @@ Property 29 WEST  DIR
 Property 30 EAST  DIR
 Property 31 NORTH  DIR
 
+Global 0 HERE  OBJ
+Global 6 WAND-ON-LOC  OBJ
+Global 7 SPELL-VICTIM
+Global 8 SPELL-USED
+Global 9 WAND-ON
+Global 10 SPELL-HANDLED?
+Global 14 SPELL?
+Global 55 CAROUSEL-FLIP-FLAG
+Global 56 CAROUSEL-ZOOM-FLAG
+Global 57 COMPASS-KLUDGE
+Global 59 EVAPORATED
+Global 60 BUCKET-TOP-FLAG
+Global 61 SPRAY-USED?
+Global 62 DIM-DOOR-FLAG
+Global 63 CRYPT-LIT?
+Global 64 GNOME-FLAG
+Global 69 SAFE-FLAG
+Global 70 BLAB-FLAG
+Global 71 BINF-FLAG  OBJ
+Global 72 BTIE-FLAG
+Global 73 MUNGED-ROOM  OBJ
+Global 75 SWORD-GLOW
+Global 85 DEATHS
+Global 86 DEAD?
+Global 87 WON-FLAG
+Global 90 SPRAYED?
+Global 133 P-CONT
+Global 136 WINNER  OBJ
+Global 143 PRSO  OBJ
+Global 144 PRSI  OBJ
+Global 145 PRSA  VERB
 Global 156 C-INTS
 Global 157 C-DEMONS
 Global 158 C-TABLE  TABLE
+Global 161 BLOC  OBJ
+Global 162 GNOME-DOOR-FLAG
 
 # Map connections that don't come directly from room properties.
 # (These are used for the "list rooms in order of closeness to you"
