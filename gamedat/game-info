@@ -291,6 +291,21 @@ Object 248 CHASM
 Object 249 LOCAL-GLOBALS
 Object 250 STREAM
 
+Property 18 CROSS  DIR
+Property 19 LAND  DIR
+Property 20 OUT  DIR
+Property 21 IN  DIR
+Property 22 DOWN  DIR
+Property 23 UP  DIR
+Property 24 SW  DIR
+Property 25 SE  DIR
+Property 26 NW  DIR
+Property 27 NE  DIR
+Property 28 SOUTH  DIR
+Property 29 WEST  DIR
+Property 30 EAST  DIR
+Property 31 NORTH  DIR
+
 Global 156 C-INTS
 Global 157 C-DEMONS
 Global 158 C-TABLE  TABLE
