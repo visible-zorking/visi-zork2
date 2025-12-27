@@ -439,6 +439,7 @@ Global 125 P-ITBL  TABLE
 Global 130 P-OFLAG
 Global 133 P-CONT
 Global 136 WINNER  OBJ
+### PRSO is a property when PRSA is WALK. Tweak?
 Global 143 PRSO  OBJ
 Global 144 PRSI  OBJ
 Global 145 PRSA  VERB
