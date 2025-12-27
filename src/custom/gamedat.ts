@@ -253,6 +253,7 @@ export type MapRoom = {
     width: number;
     height: number;
     center: { x:number, y:number };
+    bottom: { x:number, y:number };
 };
 
 export type SourceSpan = string | [ string, string ];
