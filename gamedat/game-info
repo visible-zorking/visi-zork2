@@ -481,5 +481,5 @@ MapExtraConn - VAULT OUT DEPOSITORY
 MapExtraConn - SMALL-ROOM OUT DEPOSITORY
 # Returning from death
 MapExtraConn - DEAD-PALANTIR-4 WEST INSIDE-BARROW
-### Palantir room should be listed last, but this requires more graph hacking. Remove this before release.
-MapExtraConn - INSIDE-BARROW IN DEAD-PALANTIR-1
+# You can get to DEAD-PALANTIR-1 from anywhere, but we'll map it last
+MapExtraConn - INSIDE-BARROW DISTANT DEAD-PALANTIR-1
