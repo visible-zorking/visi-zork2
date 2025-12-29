@@ -420,7 +420,13 @@ Global 71 BINF-FLAG  OBJ
 Global 72 BTIE-FLAG
 Global 73 MUNGED-ROOM  OBJ
 Global 75 SWORD-GLOW
-
+# The DUMMY table is defined twice. (The one in 2actions.zil wins. The one in gverbs.zil is compiled at 10795 but no global is set there.)
+Global 76 DUMMY  TABLE
+Global 77 YUKS  TABLE
+Global 78 HELLOS  TABLE
+### Global 79 ??? not used?
+Global 80 HO-HUM  TABLE
+Global 81 INDENTS  TABLE
 Global 82 FUMBLE-PROB
 Global 83 FUMBLE-NUMBER
 Global 84 LUCKY
