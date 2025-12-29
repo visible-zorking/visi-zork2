@@ -63,6 +63,15 @@ attr:LIGHTBIT: Set for objects which the player can sensibly `TURN ON/OFF` (e.g.
 attr:BURNBIT: Set for objects which the player can `BURN`. (It might be a bad idea, but you can do it.)
 	This is different from [attr:FLAMEBIT], which indicates objects that are currently on fire. See also [attr:LIGHTBIT], objects which the player can `TURN ON`.
 
+attr:RLANDBIT: Set for rooms which are solid ground. (Most of them.) The alternative is [attr:NONLANDBIT], but several rooms have both.
+
+attr:NONLANDBIT:Set for “rooms” in which you float in the air – or might float, at least. If the room has any walkable floor, it will also have [attr:RLANDBIT].
+	This flag is also set for objects which are (temporarily) much larger than you. This happens to anything you’re not holding when you shrink yourself in the Tea Room.
+
+attr:NWALLBIT: Set for “rooms” which are in the open air. The game does not use this flag for anything, however.
+
+attr:SACREDBIT: Not used in Zork 2.
+
 glob:SPRAYED?: Whether you’ve been sprayed with grue repellant.
 
 glob:FANTASIES: A table of hallucinations which can result from the `FANTASIZE` spell. Unfortunately, the code that displays `FANTASIES` has been lost, so the spell has no effect! See the [PRINT-CONT|~src:GVERBS-1712] routine.
