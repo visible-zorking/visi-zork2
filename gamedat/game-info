@@ -446,11 +446,41 @@ Global 97 ALWAYS-LIT
 Global 98 P-XADJN
 Global 99 P-XADJ
 Global 100 P-XNAM
-
+Global 101 P-MOBY-FOUND  OBJ
+Global 102 P-AND
+Global 103 P-CEPTR
+Global 104 P-CSPTR
+Global 105 P-GETFLAGS
+Global 106 P-MATCHLEN
+Global 107 P-OCLAUSE
+Global 108 P-MERGE
+Global 109 P-BUTS
+Global 110 P-PRSI
+Global 111 P-PRSO
+Global 112 P-ADJN
+Global 113 P-ADVERB
+Global 114 P-ADJ
+Global 115 P-NAM
+Global 116 P-GWIMBIT
+Global 117 P-SLOCBITS
+### Global 118 ??? unused?
+Global 119 P-NUMBER
+### P-WALK-DIR is a property
+Global 120 P-WALK-DIR
+Global 121 QUOTE-FLAG
+Global 122 P-NCN
+Global 123 P-VTBL
+Global 124 P-OTBL
 Global 125 P-ITBL  TABLE
+Global 129 P-MERGED
 Global 130 P-OFLAG
+
 Global 133 P-CONT
+
 Global 136 WINNER  OBJ
+
+Global 139 P-CCSRC
+
 ### PRSO is a property when PRSA is WALK. Tweak?
 Global 143 PRSO  OBJ
 Global 144 PRSI  OBJ
