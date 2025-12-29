@@ -464,7 +464,8 @@ Global 114 P-ADJ
 Global 115 P-NAM
 Global 116 P-GWIMBIT
 Global 117 P-SLOCBITS
-### Global 118 ??? unused?
+# P-DIRECTION not used
+Global 118 P-DIRECTION
 Global 119 P-NUMBER
 ### P-WALK-DIR is a property
 Global 120 P-WALK-DIR
@@ -473,22 +474,43 @@ Global 122 P-NCN
 Global 123 P-VTBL
 Global 124 P-OTBL
 Global 125 P-ITBL  TABLE
+Global 126 P-AADJ
+Global 127 P-ANAM
+Global 128 P-ACLAUSE
 Global 129 P-MERGED
 Global 130 P-OFLAG
-
+Global 131 P-IT-LOC
+Global 132 P-IT-OBJECT
 Global 133 P-CONT
-
+Global 134 P-INBUF
+Global 135 P-LEXV
 Global 136 WINNER  OBJ
-
+Global 137 P-DIR
+Global 138 P-LEN
 Global 139 P-CCSRC
-
+Global 140 P-SYNTAX
+Global 141 P-ONEOBJ
+Global 142 P-TABLE
 ### PRSO is a property when PRSA is WALK. Tweak?
 Global 143 PRSO  OBJ
 Global 144 PRSI  OBJ
 Global 145 PRSA  VERB
+# GWIM-DISABLE not used
+Global 146 GWIM-DISABLE
+Global 147 P-NOT-HERE
+Global 148 P-MULT
+Global 149 L-PRSI
+Global 150 L-PRSO
+Global 151 L-PRSA
+Global 152 DEBUG
+Global 153 P-WON
+Global 154 PLAYER
+Global 155 CLOCK-WAIT
 Global 156 C-INTS
 Global 157 C-DEMONS
 Global 158 C-TABLE  TABLE
+Global 159 LOAD-ALLOWED
+Global 160 LOAD-MAX
 Global 161 BLOC  OBJ
 Global 162 GNOME-DOOR-FLAG
 Global 163 SECRET-DOOR
