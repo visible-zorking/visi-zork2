@@ -77,6 +77,157 @@ export function AboutPage()
                     And you are watching the Z-machine execute the game,
                     live, as you play.
                 </p>
+                <p>
+                    (In case it&#x2019;s not obvious: <em>SPOILERS</em> for Zork 2.
+                    The source code gives away every secret and solution in the game.
+                    The whole point of this project is to demonstrate how
+                    Zork works!)
+                </p>
+                <p>
+                    Type commands in the left pane. (If you&#x2019;re not familiar
+                    with parser games,{' '}
+                    <ExtWebLink url={ 'https://pr-if.org/doc/play-if-card/' } text={ 'here\u2019s a quick intro' } />.)
+                    As the game responds, the panes on the right will display
+                    the current game state and the code that is
+                    executing.
+                </p>
+                <p>
+                    Look at the
+                    {' '}<a className="Internal" href="#" onClick={ (ev)=>evhan_click_tab(ev, 'objtree') }>World</a>{' '}
+                    tab for a start.
+                    This shows every object and room in the game.
+                    You, the Adventurer, are in the topmost room:{' '}
+                    <code>{ curroom }</code>.
+                    Listed with you are the objects you
+                    can see.{' '}
+                    { (firstobj ?
+                       <>(Try typing &#x201C;<code>EXAMINE { firstobj }</code>&#x201D;!) </>
+                       : null) }
+                    Objects you pick up will be listed directly under
+                    the <code>ADVENTURER</code>; they will move with
+                    you as part of your inventory.
+                </p>
+                <p>
+                    The other tabs display other aspects of the Z-machine.
+                    {' '}<a className="Internal" href="#" onClick={ (ev)=>evhan_click_tab(ev, 'activity') }>Activity</a>{' '}
+                    shows the functions called in
+                    the most recent turn, and what they printed.
+                    {' '}<a className="Internal" href="#" onClick={ (ev)=>evhan_click_tab(ev, 'globals') }>State</a>{' '}
+                    shows all the game&#x2019;s global variables.
+                    {' '}<a className="Internal" href="#" onClick={ (ev)=>evhan_click_tab(ev, 'timers') }>Timers</a>{' '}
+                    shows the table of timed events.
+                    {' '}<a className="Internal" href="#" onClick={ (ev)=>evhan_click_tab(ev, 'map') }>Map</a>{' '}
+                    is what you think.
+                </p>
+                <p>
+                    Click on any function, object, or variable to see its
+                    definition in the source code. Click on an object&#x2019;s
+                    {' '}<ObjPageLink onum={ 4 } /> button
+                    to see its current state and place in the world.
+                    (This will initially match the source code, but
+                    may change as you interact with the game.)
+                </p>
+                <p>
+                    <Commentary topic={ 'ABOUT' } />
+                    Click on the green buttons to see commentary about
+                    Zork&#x2019;s implementation. Notes, trivia, whatever came
+                    into my head as I was building the Visible Zorker!
+                </p>
+                <h2>Which Zork is this?</h2>
+                <p>
+                    The first version of Zork was written in 1977 by energetic
+                    MIT students, in a LISP-y language called MDL. A few
+                    years later, as part of Infocom, they rewrote it &#x2014; 
+                    piecewise &#x2014; with a homebrew portable tool they called{' '}
+                    <ExtWebLink url={ 'https://blog.zarfhome.com/2019/04/what-is-zil-anyway' } text={ 'ZIL' } />.
+                    (For &#x201C;Zork Implementation Language&#x201D;.)
+                </p>
+                <p>
+                    The version you see here dates from 1984. (The serial number
+                    &#x201C;840904&#x201D; shows the compile date.) By this point,
+                    the Infocom folks had combined the common parts of
+                    Zork 1, 2, and 3 into a de-facto library.
+                    This library, containing the
+                    parser and generic action code, was shared with (almost)
+                    no changes between the three games.
+                </p>
+                <p>
+                    The common library (the files &#x201C;gverbs.zil&#x201D;,
+                    &#x201C;gparser.zil&#x201D;, etc) do contain bits of
+                    code specific to each of the three games. (For example,
+                    the game title banners printed in{' '}
+                    <code><a className="Internal" href="#" onClick={ (ev)=>evhan_click_routine(ev, 'V-VERSION') }>V-VERSION</a></code>.)
+                    The passages meant for Zork 1 and 3 were skipped when
+                    compiling Zork 2.
+                </p>
+                <p>
+                    This &#x201C;renovated&#x201D; 1984 release is
+                    the one most commonly seen today,
+                    because it was included in the &#x201C;
+                    <ExtWebLink url={ 'https://archive.org/details/lost-treasures-of-infocom' } text={ 'Lost Treasures of Infocom' } />
+                    &#x201D; collection and later collections.
+                    I have therefore selected it for this exhibit.
+                    That was not the final version, however.
+		    Archived evidence indicates that they continued
+                    updating the source until at least 1986.
+                </p>
+                <h2>Sources and acknowledgements</h2>
+                <p>
+                    Zork&#x2019;s source code was first{' '}
+                    <ExtWebLink url={ 'https://github.com/historicalsource/zork2' } text={ 'publicly released' } />
+                    {' '}by Jason Scott in April 2019.
+                    I then combed through all known versions and posted my{' '}
+                    <ExtWebLink url={ 'https://eblong.com/infocom/' } text={ 'Obsessively Complete Infocom Catalog' } />,
+                    which now includes this Visible Zorker exhibition.
+                </p>
+                <p>
+                    The Visible Zorker is built on a seriously customized
+                    version of the{' '}
+                    <ExtWebLink url={ 'https://github.com/curiousdannii/parchment' } text={ 'Parchment' } /> Z-machine interpreter
+                    by Marnanel Thurman, Atul Varma, and Dannii Willis.
+                    You can find this, and the rest of the Visible Zorker
+                    machinery, on{' '}
+                    <ExtWebLink url={ 'https://github.com/erkyrath/visizork' } text={ 'Github' } />.
+                </p>
+                <p>
+                    I used TXD from the{' '}
+                    <ExtWebLink url={ 'https://ifarchive.org/indexes/if-archive/infocom/tools/ztools/' } text={ 'ZTools' } />
+                    {' '}package to analyze the game file. That
+                    process was invaluably aided by the{' '}
+                    <ExtWebLink url={ 'https://ifarchive.org/indexes/if-archive/infocom/tools/reform/' } text={ 'Infocom analysis work' } />
+                    {' '}done in 2007 by Allen Garvin, Ben Rudiak-Gould,
+                    and Ethan Dicks.
+                </p>
+                <p>
+                    The fonts used are Courier Prime, Lato, and
+                    Libre Baskerville. The header background is copied from
+                    Infocom&#x2019;s Zork hint maps.
+                </p>
+                <p>
+                    Zork itself was originally written by Tim Anderson,
+                    Marc Blank, Bruce Daniels, and Dave Lebling. The
+                    commercial versions are copyright 1981 (etc) by Infocom,
+                    then Activision, then renamed to Mediagenic,
+                    then Bobby Kotick bought it and renamed it Activision,
+                    then Vivendi bought it and merged it with Blizzard,
+                    then Microsoft consumed the lot.
+                </p>
+                <p>
+                    Thus, the Zork 2 source code is copyright 2025 by
+                    Microsoft. As of November 2025, it is{' '}
+                    <ExtWebLink url={ 'https://opensource.microsoft.com/blog/2025/11/20/preserving-code-that-shaped-generations-zork-i-ii-and-iii-go-open-source' } text={ 'open source' } />
+                    {' '}under the MIT license. Thanks to Microsoft for making
+                    this project completely legal!
+                </p>
+                <hr/>
+                <p>
+                    Aside from the above, the Visible Zorker is copyright
+                    2025-2026 by Andrew Plotkin. MIT license;{' '}
+                    <ExtWebLink url={ 'https://github.com/erkyrath/visizork2' } text={ 'Github repo' } />;
+                    {' '}last updated { lastupdate }.
+                    This exhibit is hosted by the{' '}
+                    <ExtWebLink url={ 'https://eblong.com/infocom/' } text={ 'Obsessively Complete Infocom Catalog' } />.
+                </p>
             </div>
         </div>
     );
