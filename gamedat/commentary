@@ -70,6 +70,12 @@ attr:NONLANDBIT:Set for “rooms” in which you float in the air – or might f
 
 attr:NWALLBIT: Set for “rooms” which are in the open air. The game does not use this flag for anything, however.
 
+attr:STAGGERED: Set for valuable objects – not just the demon’s treasures, but the spheres, the the wand, and the collar. However, the game generally relies on the [prop:VALUE] property rather than `STAGGERED`.
+
+prop:VALUE: Set for valuable objects, and rooms which are difficult to reach. Picking up the object or entering the room awards you this many points. (And then the property is set to zero, to indicate that you’ve scored it.)
+	Valuable objects also have the [attr:STAGGERED] flag, but the game almost never checks this.
+	The `VALUE` property is also used to check whether the demon (and gnome, etc) considers an object valuable. The *value* of `VALUE` is not important here – just whether the property exists at all. (After all, any treasure you’re holding necessarily has `VALUE` zero.)
+
 attr:SACREDBIT: Not used in Zork 2.
 
 glob:SPRAYED?: Whether you’ve been sprayed with grue repellant.
