@@ -143,6 +143,12 @@ export function AboutPage()
                     (For &#x201C;Zork Implementation Language&#x201D;.)
                 </p>
                 <p>
+                    Zork 2 combines several puzzles from MIT Zork
+                    (the bank, well, and volcano areas) with a brand-new
+                    plot and new characters (the demon, the princess,
+                    and the wizard).
+                </p>
+                <p>
                     The version you see here dates from 1984. (The serial number
                     &#x201C;840904&#x201D; shows the compile date.) By this point,
                     the Infocom folks had combined the common parts of
@@ -168,7 +174,7 @@ export function AboutPage()
                     &#x201D; collection and later collections.
                     I have therefore selected it for this exhibit.
                     That was not the final version, however.
-		    Archived evidence indicates that they continued
+                    Archived evidence indicates that Infocom continued
                     updating the source until at least 1986.
                 </p>
                 <h2>Sources and acknowledgements</h2>
@@ -187,7 +193,7 @@ export function AboutPage()
                     by Marnanel Thurman, Atul Varma, and Dannii Willis.
                     You can find this, and the rest of the Visible Zorker
                     machinery, on{' '}
-                    <ExtWebLink url={ 'https://github.com/erkyrath/visizork' } text={ 'Github' } />.
+                    <ExtWebLink url={ 'https://github.com/erkyrath/visizork2' } text={ 'Github' } />.
                 </p>
                 <p>
                     I used TXD from the{' '}
