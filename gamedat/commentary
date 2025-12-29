@@ -74,7 +74,7 @@ attr:STAGGERED: Set for valuable objects – not just the demon’s treasures, b
 
 prop:VALUE: Set for valuable objects, and rooms which are difficult to reach. Picking up the object or entering the room awards you this many points. (And then the property is set to zero, to indicate that you’ve scored it.)
 	Valuable objects also have the [attr:STAGGERED] flag, but the game almost never checks this.
-	The `VALUE` property is also used to check whether the demon (and gnome, etc) considers an object valuable. The *value* of `VALUE` is not important here – just whether the property exists at all. (After all, any treasure you’re holding necessarily has `VALUE` zero.)
+	The `VALUE` property is also used to check whether the demon (and gnome, etc) approves of an object. The *value* of `VALUE` is not important here – just whether the property exists at all. (After all, any treasure you’re holding necessarily has `VALUE` zero.)
 
 attr:SACREDBIT: Not used in Zork 2.
 
@@ -102,6 +102,14 @@ rtn:I-SWORD: This routine runs every turn that you are carrying the sword. It ch
 	The sword’s glow level is stored in the [glob:SWORD-GLOW] variable.
 
 glob:SWORD-GLOW: Set by [rtn:I-SWORD].
+
+obj:PALANTIR-1: The game lets you refer to the spheres as `PALANTIRS`, but it doesn’t do so itself. No doubt the specter of Tolkien lawsuits loomed large. (Similarly, you can refer to the [~obj:SWORD] as `ORCRIST` or `GLAMDRING` if you want to be a nerd.)
+
+obj:PALANTIR-2: The game lets you refer to the spheres as `PALANTIRS`, but it doesn’t do so itself. No doubt the specter of Tolkien lawsuits loomed large. (Similarly, you can refer to the [~obj:SWORD] as `ORCRIST` or `GLAMDRING` if you want to be a nerd.)
+
+obj:PALANTIR-3: The game lets you refer to the spheres as `PALANTIRS`, but it doesn’t do so itself. No doubt the specter of Tolkien lawsuits loomed large. (Similarly, you can refer to the [~obj:SWORD] as `ORCRIST` or `GLAMDRING` if you want to be a nerd.)
+
+obj:PALANTIR-4: The game lets you refer to the spheres as `PALANTIRS`, but it doesn’t do so itself. No doubt the specter of Tolkien lawsuits loomed large. (Similarly, you can refer to the [~obj:SWORD] as `ORCRIST` or `GLAMDRING` if you want to be a nerd.)
 
 glob:DUMMY: `DUMMY` gives random responses for silly commands, like `CLOSE DOOR` when the door isn’t open.
 	This table is defined in two places in the source, with different contents. See [GVERBS|~src:GVERBS-2133]. The compiler apparently didn’t report this as an error, and the developers didn’t notice.
