@@ -18,6 +18,31 @@ rtn:V-VERSION: Print the title, release, and serial number.
 src:GVERBS-89: The TRS-80 interpreter set a special bit which told the game to change certain behavior for no-doubt-contractual reasons. For Zork 2, it adds the line “Licensed to Tandy Corporation”.
 	For a complete list of “Tandy bit” behavior changes in Infocom games, [see this page|https://ifarchive.org/if-archive/infocom/info/tandy_bits.html].
 
+objtree-legend: In this list, `Rooms` are rooms and `Items` are regular items. (Sometimes portable, sometimes not.)
+	`Scen` indicates scenery objects. These exist in multiple places; for example, the [~obj:MOSS] is visible from many locations near the entrance.
+	`Glob` indicates a global object, which is *always* visible, or at least mentionable. For example, [~obj:GRUE] is global – not because grues are always present, but so you can always ask `WHAT IS A GRUE`.
+
+obj:LOCAL-GLOBALS: This is a container for scenery objects like [~obj:MOSS], which are visible from many locations in the game.
+
+src:GGLOBALS-26: This refers to the word `ZZMGCK` in [~obj:LOCAL-GLOBALS], above.
+	Why is this synonym necessary? Does it need to be alphabetically last? Not clear! Most Infocom games have it (or a variation), but some say “No, this synonym doesn’t need to exist” instead.
+	If you type `EXAMINE ZZMGCK`, the parser finds [~obj:local-globals]. But that object is nameless, so you get a garbage reply. Go on, try it.
+
+obj:ADVENTURER: Yes, the player’s printed name is “cretin”, although the game rarely says so. (The death message for `ATTACK HEADS` mentions it.) This sort of sarcastic insult hasn’t aged too well, but MIT culture had a lot of it. Compare [*glob:WINNER], and also the old MIT [Jargon File|https://jargon-file.org/archive/jargon-1.0.0.33.dos.txt].
+	Note that if you refer to `ME` (or `CRETIN`), you get the [*obj:ME] global object, not the `ADVENTURER`.
+
+obj:ME: A global object which is always in scope. Commands referring to `ME` hit this, rather than [*obj:ADVENTURER], which is a stub that moves around the map.
+	Because of this, parser messages mostly refer to you as “you”, even though the [*obj:ADVENTURER]’s printed name is “cretin”.
+
+glob:PLAYER: `PLAYER` is always the [~obj:ADVENTURER]. Compare [*glob:WINNER].
+
+glob:WINNER: `WINNER` is the actor in the current command. (Compare [*glob:PLAYER].) 
+	`WINNER` is usually [~obj:ADVENTURER], but for a command like `ROBOT, GO EAST` it shifts to the named NPC.
+	“Winner” is just as sarcastic as “[cretin|*obj:ADVENTURER]”, but from the other side.
+
+glob:HERE: The location of the [*glob:WINNER].
+
+
 ### ODYSSEUS bug
 ### BLAST noncompile
 ### FANTASIES missing
