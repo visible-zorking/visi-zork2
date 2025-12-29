@@ -515,6 +515,11 @@ Global 161 BLOC  OBJ
 Global 162 GNOME-DOOR-FLAG
 Global 163 SECRET-DOOR
 
+Global 166 PREPOSITIONS
+Global 167 ACTIONS
+Global 168 PREACTIONS
+Global 169 VERBS
+
 # Map connections that don't come directly from room properties.
 # (These are used for the "list rooms in order of closeness to you"
 # display tab.)
