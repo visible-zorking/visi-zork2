@@ -49,7 +49,7 @@ glob:ALWAYS-LIT: Whether the player is inherently emitting light. The wizard mig
 rtn:LIT?: Determine whether a given location has light. This is true if the room or anything in it has [attr:ONBIT]. It’s also true if the player is [glob:ALWAYS-LIT].
 	This routine is used to set the [glob:LIT] variable. It’s also used to determine visibility in some other situations. For example, if you peer out from inside a sphere, or look through the keyhole, the game checks whether you can see only darkness.
 
-glob:LOW-DIRECTION: Properties with this value and up are directions.
+glob:LOW-DIRECTION: Properties with this value and above are directions.
 
 attr:ONBIT: Set for glowing objects and naturally-illuminated rooms.
 	This is different from [attr:LIGHTBIT], which indicates objects that the player can `TURN ON`. See also [attr:FLAMEBIT], objects which are on fire.
@@ -77,6 +77,25 @@ glob:SPRAYED?: Whether you’ve been sprayed with grue repellant.
 glob:FANTASIES: A table of hallucinations which can result from the `FANTASIZE` spell. Unfortunately, the code that displays `FANTASIES` has been lost, so the spell has no effect! See the [PRINT-CONT|~src:GVERBS-1712] routine.
 
 src:GVERBS-1712: In earlier versions of Zork 2, there was code here to display [~glob:FANTASIES] if you were under the `FANTASIZE` spell. Unfortunately, when renovating the Zorks in 1984, this code was somehow lost. The `FANTASIZE` spell is now broken.
+
+glob:C-INTS: Indicates how much of the timer table ([*glob:C-TABLE]) is used. This counts down from `C-TABLELEN`, which is 180.
+
+glob:C-DEMONS: Indicates how much of the timer table is used for daemons. (No relation to the wizard’s [demon|~obj:GENIE]!)
+	The difference between daemons and timers is that timers run every turn; daemons run every *input*, even if no turn passes. But Zork 2 does not use daemons.
+
+glob:C-TABLE: The timer table. See the “Timers” tab for a current listing.
+
+TIMERS-LEGEND: A list of the timers running (or paused) in the timer table ([~glob:C-TABLE]). Positive numbers count down (while enabled) and call the named function after that many turns. Negative numbers are called every turn while the timer is enabled.
+	This list only grows as you play; timers can be added, started, and stopped, but not removed.
+	Note that enabled negative timers, like [*rtn:I-SWORD], count down towards “negative infinity”. They’ll wrap and stop working after 65535 turns, but back then nobody worried about this!
+
+
+obj:GENIE: The game generally refers to the Big Bad as a “demon”, but “genie” is occasionally used as well.
+
+rtn:I-SWORD: This routine runs every turn that you are carrying the sword. It checks adjacent rooms for enemies and displays the “sword is glowing” message.
+	The sword’s glow level is stored in the [glob:SWORD-GLOW] variable.
+
+glob:SWORD-GLOW: Set by [rtn:I-SWORD].
 
 glob:DUMMY: `DUMMY` gives random responses for silly commands, like `CLOSE DOOR` when the door isn’t open.
 	This table is defined in two places in the source, with different contents. See [GVERBS|~src:GVERBS-2133]. The compiler apparently didn’t report this as an error, and the developers didn’t notice.

@@ -503,7 +503,7 @@ Global 150 L-PRSO
 Global 151 L-PRSA
 Global 152 DEBUG
 Global 153 P-WON
-Global 154 PLAYER
+Global 154 PLAYER  OBJ
 Global 155 CLOCK-WAIT
 Global 156 C-INTS
 Global 157 C-DEMONS
