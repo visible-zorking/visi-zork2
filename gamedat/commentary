@@ -135,21 +135,21 @@ obj:DIAMOND-5: The Map tab shows the rooms as laid out by their direction proper
 
 rtn:DIAMOND-MOTION: Everybody loves a [maze|com-maze-1].
 	This routine handles travel in the Oddly-angled Rooms, and the mechanics of solving it.
-	Let’s follow the logic. [Step 1...|*src:2ACTIONS-2185]
+	Let’s follow the logic...
+	...Is the maze [solved|*src:2ACTIONS-2185] or [unsolved|*src:2ACTIONS-2187]? This is the [~glob:DIAMOND-SOLVE] variable.
 	
-src:2ACTIONS-2185: This logic only applies if the action is `WALK` and the maze is unsolved ([~glob:DIAMOND-SOLVE]). If the maze is solved, travel follows normal direction.
-	If the maze is still unsolved...
+src:2ACTIONS-2185: If the maze is solved, [rtn:DIAMOND-MOTION] returns with no special effect. Travel then follows normal directions. From the [center room|~obj:DIAMOND-5], you can go both `UP` and `DOWN`.
+
+src:2ACTIONS-2187: If the maze is still unsolved...
 	...are you in an [even room|src:2ACTIONS-2190] or an [odd room|src:2ACTIONS-2213]?
 
 src:2ACTIONS-2190: If you are in an even room (2/4/6/8)...
 	Have you made the [correct next move|src:2ACTIONS-2191] or a [wrong move|src:2ACTIONS-2210]?
-	The correct next move is defined by [~glob:DIDIRS]). You first move `SE`, then `NE`, then `NW`, then `SW`.
-	Note that it doesn’t at all matter *which* room you’re in. Indeed, if you weren’t playing in the Visible Zorker, you would have no way to tell!
+	The correct next move is defined by [~glob:DIDIRS]). You must first move `SE`, then `NE`, then `NW`, then `SW`.
+	Note that it doesn’t at all matter *which* even room you’re in. Indeed, if you weren’t playing in the Visible Zorker, you would have no way to tell!
 
-src:2ACTIONS-2191: CORRECT
-	If the move was correct, increment [~glob:DIAMOND-COUNT] and possibly mark the maze solved. Then transport you along the cycle of even rooms: 2→4→8→6→2. (Again, this has nothing to do with the move you just made.)
-	If the move was incorrect, call [rtn:DIAMOND-LOSS].
-	If you are in the center room (5) or one of the other rooms (1/3/7/9), the result of your move is entirely random. (Except that going `UP` from the center always works.) It could say “Can’t go that way”, or call [rtn:DIAMOND-LOSS], or go to a randomly selected even room (2/4/6/8). In the latter case, the [~obj:BAT] will turn up if it hasn’t.
+src:2ACTIONS-2191: For a correct move, we increment [~glob:DIAMOND-COUNT]. If that reaches 5 (meaning you’ve made your fourth correct move in a row), we also set [~glob:DIAMOND-SOLVE]. Good job!
+	Regardless, we then transport you along the cycle of even rooms: 2→4→8→6→2. Again, this has nothing to do with the move you just made.
 
 src:2ACTIONS-2210: A wrong move from an even room always calls [rtn:DIAMOND-LOSS].
 
@@ -157,17 +157,28 @@ src:2ACTIONS-2213: If you are in an odd room (1/3/5/7/9)...
 	...did you [go up from the center|src:2ACTIONS-2215]? (The exit stairs.)
 	...or did you [make any other move at all|src:2ACTIONS-2216]?
 
-src:2ACTIONS-2215: Going `UP` from the [center room|~obj:DIAMOND-5] always works. (This is how you return to the [Menhir Room|~obj:MENHIR-ROOM].) Of course, *finding* the center room is tricky! It's only a 20% chance in [rtn:DIAMOND-LOSS].
+src:2ACTIONS-2215: Going `UP` from the [center room|~obj:DIAMOND-5] always works. (This is how you return to the [Menhir Room|~obj:MENHIR-ROOM].) Of course, *finding* the center room is tricky! It’s only a 20% chance in [rtn:DIAMOND-LOSS].
 
-src:2ACTIONS-2216: OTHER
+src:2ACTIONS-2216: Any move in an odd room (aside from `UP` the center stairs) gives a completely random result. Roll a die! (Effectively.)
+	...[rolled 1 or 2|src:2ACTIONS-2219]?
+	...[rolled 3|src:2ACTIONS-2222]?
+	...[rolled 4, 5, 6|src:2ACTIONS-2226]?
+
+src:2ACTIONS-2219: After any move in an odd room, you have a 33% chance of a “can’t go that way” message.
+
+src:2ACTIONS-2222: After any move in an odd room, you have a 16% chance of [rtn:DIAMOND-LOSS].
+	(Yeah, the code says `PROB 25`. But that’s after the [above 33% chance|~src:2ACTIONS-2216] has failed.)
+
+src:2ACTIONS-2226: After any move in an odd room, you have a 50% chance of being sent to a random *even* room. If the [~obj:BAT] hasn’t yet turned up, it will turn up now. (But if you leave it alone, it will remain in that even room thereafter.)
 
 rtn:DIAMOND-LOSS: This handles some of the false moves in the maze. (Not all of them!)
 	We increment [~glob:DIAMOND-MOVES], which counts up towards the Wizard appearing to taunt you. Then we transport the player to a randomly-selected odd room (1/3/5/7/9).
-	Note that this is the only way to return to the [stairway|obj:DIAMOND-5] if the maze is unsolved, and it’s only a 20% chance. Inconsiderate!
+	Note that this is the only way to return to the [stairway|obj:DIAMOND-5] if the maze is unsolved. And that’s only a 20% chance. Inconsiderate!
 
 glob:DIAMOND-MOVES: This tracks how many wrong moves you’ve made in the maze. At 20, the Wizard [taunts you|~rtn:DIAMOND-LOSS].
 
 glob:DIAMOND-BASE: This tracks the farthest progress you’ve ever made in the maze. The Wizard uses this as part of his taunt: “You’ll never get past *second* base!”
+
 
 glob:DUMMY: `DUMMY` gives random responses for silly commands, like `CLOSE DOOR` when the door isn’t open.
 	This table is defined in two places in the source, with different contents. See [GVERBS|~src:GVERBS-2133]. The compiler apparently didn’t report this as an error, and the developers didn’t notice.
