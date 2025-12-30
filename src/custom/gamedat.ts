@@ -21,8 +21,8 @@ export function signed_zvalue(val: number) : number
 // Sorry, this map is in a lot of places. Redundantly.
 const sourcefile_key_map: any = {
     'ZORK1':    'A',
-    '1ACTIONS': 'B',
-    '1DUNGEON': 'C',
+    '2ACTIONS': 'B',
+    '2DUNGEON': 'C',
     'GCLOCK':   'D',
     'GGLOBALS': 'E',
     'GMACROS':  'F',
