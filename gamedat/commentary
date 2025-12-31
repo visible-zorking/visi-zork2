@@ -181,6 +181,14 @@ glob:DIAMOND-MOVES: This tracks how many wrong moves you’ve made in the maze. 
 glob:DIAMOND-BASE: This tracks the farthest progress you’ve ever made in the maze. The Wizard uses this as part of his taunt: “You’ll never get past *second* base!”
 
 
+src:CRUFTY-1: Weirdly, nothing ever includes this file. See [zork.zil|src:ZORK2-34].
+	The [rtn:I-LANTERN] routine is definitely part of the game file. So we know the compiler read this file in. But it’s not obvious how.
+
+src:ZORK2-34: Notice something missing? There's no `IFILE` line ("include file") for [crufty.zil|~src:CRUFTY-1].
+	The [rtn:I-LANTERN] routine is definitely part of the game file. So we know the compiler read crufty.zil in. But it’s not obvious how.
+	Furthermore, when I analyzed the game file, I found that functions were *not* generated in the order of the `IFILE` lines here. (In Zork 1, functions *were* generated in `IFILE` order.)
+	My best guess is that the zork2.zil file was rewritten after July 26 1984, but the game was never recompiled.
+
 glob:DUMMY: `DUMMY` gives random responses for silly commands, like `CLOSE DOOR` when the door isn’t open.
 	This table is defined in two places in the source, with different contents. See [GVERBS|~src:GVERBS-2133]. The compiler apparently didn’t report this as an error, and the developers didn’t notice.
 
