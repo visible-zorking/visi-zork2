@@ -24,16 +24,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     showgrid="true"
+     showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="1796.5"
-     inkscape:cy="607.5"
+     inkscape:cx="833.5"
+     inkscape:cy="689.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
-     inkscape:window-x="2094"
+     inkscape:window-x="2093"
      inkscape:window-y="75"
      inkscape:window-maximized="0"
-     inkscape:current-layer="labellayer">
+     inkscape:current-layer="decorlayer">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -47,7 +47,7 @@
        opacity="0.14902"
        empspacing="5"
        enabled="true"
-       visible="true" />
+       visible="false" />
   </sodipodi:namedview>
   <style
      id="style1">#roomlayer rect { fill:#F8F0E8; stroke:#000; stroke-width:0.7; }
@@ -237,6 +237,21 @@
        d="m 261.93749,153.45834 h 21.16667 l 7.9375,-10.58333 v -13.22917 l 5.29166,-7.9375 h 18.52084 l 5.29166,-7.9375 0,-100.541673 L 309.56249,0 H 235.47916 L 224.89583,13.229167 V 113.77084 l 5.29166,7.9375 h 18.52083 l 5.29167,7.9375 v 13.22917 z"
        id="path145"
        sodipodi:nodetypes="ccccccccccccccccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;fill:#f1f1f1;fill-opacity:1;fill-rule:evenodd;stroke:#c8c8c8;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
+       d="m 285.74999,314.85418 63.5,-2.64583 -5.29167,31.75 7.9375,37.04167 -68.79166,-10.58334 -60.85417,7.93751 5.29167,-31.75 -10.58333,-39.68751 z"
+       id="path256"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f1f1f1;fill-opacity:1;fill-rule:evenodd;stroke:#c8c8c8;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
+       d="M 294.21666,240.24167 252.67708,177.8 c 0,0 -42.59792,-72.49583 -45.24375,-94.191668 -6.61458,2.645833 -82.81458,3.704167 -89.42916,-1.058333 0.79375,29.633331 -31.750004,157.691661 -31.750004,157.691661 z"
+       id="path257"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#fcfcfc;fill-opacity:1;fill-rule:evenodd;stroke:#c8c8c8;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers"
+       d="m 166.68749,76.464582 c 7.14375,26.061458 24.93698,56.290118 42.4987,87.378648 17.56173,31.08854 48.38569,45.3099 50.10547,71.90052 l -54.23958,-0.26459 C 209.28541,216.69374 138.11249,93.927082 136.26041,76.464582 Z"
+       id="path258"
+       sodipodi:nodetypes="czcccc" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1356,6 +1371,10 @@
        style="font-variation-settings:normal;opacity:1;fill:url(#linearGradient146);fill-opacity:0.25;stroke:none;stroke-width:0.13229166;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        d="m 264.58332,26.722918 c -1.4618,0 -2.38125,0.919458 -2.38125,2.38125 l 9.78959,-3.6e-5 11.1125,-3.6e-5 -0.26459,7.2e-5 c 0,-1.461792 -0.90499,-2.381286 -2.36679,-2.381286 z"
        sodipodi:nodetypes="sccccss" />
+    <path
+       id="path255"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.2;fill-rule:evenodd;stroke:none;stroke-width:0.196372;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:fill markers stroke;stop-color:#000000;stop-opacity:1"
+       d="M 296.23153 345.65745 L 298.50787 352.31699 L 305.54465 352.21002 L 296.23153 345.65745 z M 296.23153 345.65745 L 287.12149 352.49011 L 294.15879 352.38314 L 296.23153 345.65745 z M 294.15879 352.38314 L 292.87721 356.53999 L 296.43513 359.04268 L 299.91451 356.43302 L 298.50787 352.31699 L 294.15879 352.38314 z M 299.91451 356.43302 L 302.19085 363.09256 L 305.54517 352.21054 L 305.54465 352.21054 L 299.91451 356.43302 z M 302.19085 363.09256 L 296.43513 359.04268 L 290.80447 363.26568 L 302.19085 363.09256 z M 290.80447 363.26568 L 292.87721 356.53999 L 287.12149 352.49011 L 290.80447 363.26568 z M 296.33333 353.20738 A 2.1587558 2.1587558 0 0 1 298.49185 355.3659 A 2.1587558 2.1587558 0 0 1 296.33333 357.52494 A 2.1587558 2.1587558 0 0 1 294.17481 355.3659 A 2.1587558 2.1587558 0 0 1 296.33333 353.20738 z " />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -2010,17 +2029,6 @@
          x="431.27081"
          y="469.37088"
          id="tspan51">Landing</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.88213px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;opacity:1;vector-effect:none;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.7451;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
-       x="501.66391"
-       y="230.47621"
-       id="text52"><tspan
-         sodipodi:role="line"
-         id="tspan52"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.38758px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.7451;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
-         x="501.66391"
-         y="230.47621">Garden</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime, Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
@@ -2736,19 +2744,24 @@
          id="tspan250">Room</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.96874995px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.96875px;line-height:1.3;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-end:url(#marker46);paint-order:stroke fill markers"
        x="296.33331"
-       y="354.54169"
+       y="351.36664"
        id="text252"><tspan
          sodipodi:role="line"
-         style="stroke-width:1;-inkscape-font-specification:'Lato, Bold';font-family:Lato;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:3.96874995px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.96875px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1"
          x="296.33331"
-         y="354.54169"
+         y="351.36664"
          id="tspan251">Pentagram</tspan><tspan
          sodipodi:role="line"
-         style="stroke-width:1;-inkscape-font-specification:'Lato, Bold';font-family:Lato;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;font-size:3.96874995px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.96875px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1"
          x="296.33331"
-         y="360.04501"
-         id="tspan252">Room</tspan></text>
+         y="356.526"
+         id="tspan252"></tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.96875px;font-family:Lato;-inkscape-font-specification:'Lato, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1"
+         x="296.33331"
+         y="361.68539"
+         id="tspan255">Room</tspan></text>
   </g>
 </svg>
