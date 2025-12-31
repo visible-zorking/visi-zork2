@@ -141,19 +141,19 @@ interface SourceFileMap {
     [key: string]: string;
 }
 
-// Presentation order
-export const sourcefile_list: [ string, string ][] = [
-    ['zork2.zil',    'A'],
-    ['2actions.zil', 'B'],
-    ['2dungeon.zil', 'C'],
-    ['gmain.zil',    'G'],
-    ['gmacros.zil',  'F'],
-    ['gglobals.zil', 'E'],
-    ['gparser.zil',  'H'],
-    ['gsyntax.zil',  'I'],
-    ['gverbs.zil',   'J'],
-    ['gclock.zil',   'D'],
-    ['crufty.zil',   'K'],
+// Presentation order. Filenames must match game-info!
+export const sourcefile_presentation_list: string[] = [
+    'zork2.zil',
+    '2actions.zil',
+    '2dungeon.zil',
+    'gmain.zil',
+    'gmacros.zil',
+    'gglobals.zil',
+    'gparser.zil',
+    'gsyntax.zil',
+    'gverbs.zil',
+    'gclock.zil',
+    'crufty.zil',
 ];
 
 export type AttributeData = {
@@ -247,6 +247,7 @@ interface CommentaryLineMap {
 export const gamedat_ids = (window as any).gamedat_ids;
 
 const sourcefile_capkey_map: SourceFileMap = (window as any).gamedat_sourcefile_capkeymap;
+export const gamedat_sourcefile_keymap: SourceFileMap = (window as any).gamedat_sourcefile_keymap;
 export const gamedat_sourcefile_revkeymap: SourceFileMap = (window as any).gamedat_sourcefile_revkeymap;
 export const gamedat_property_nums = (window as any).gamedat_property_nums as Map<number, PropertyData>;
 export const gamedat_property_names = (window as any).gamedat_property_names as Map<string, PropertyData>;
