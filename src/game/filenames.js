@@ -1,0 +1,3 @@
+window.gamedat_sourcefile_keymap = {"zork2.zil":"A","2actions.zil":"B","2dungeon.zil":"C","gclock.zil":"D","gglobals.zil":"E","gmacros.zil":"F","gmain.zil":"G","gparser.zil":"H","gsyntax.zil":"I","gverbs.zil":"J","crufty.zil":"K"};
+window.gamedat_sourcefile_capkeymap = {"ZORK2":"A","2ACTIONS":"B","2DUNGEON":"C","GCLOCK":"D","GGLOBALS":"E","GMACROS":"F","GMAIN":"G","GPARSER":"H","GSYNTAX":"I","GVERBS":"J","CRUFTY":"K"};
+window.gamedat_sourcefile_revkeymap = {"A":"zork2.zil","B":"2actions.zil","C":"2dungeon.zil","D":"gclock.zil","E":"gglobals.zil","F":"gmacros.zil","G":"gmain.zil","H":"gparser.zil","I":"gsyntax.zil","J":"gverbs.zil","K":"crufty.zil"};
