@@ -28,6 +28,15 @@ export function TabbedPane()
 {
     let rctx = useContext(ReactCtx);
 
+    const mobiles = [
+        gamedat_ids.WIZARD,
+        gamedat_ids.PRINCESS,
+        gamedat_ids.UNICORN,
+        gamedat_ids.ROBOT,
+        gamedat_ids.GENIE,
+        gamedat_ids.DRAGON,
+    ];
+
     let ells = tab_list.map(([key, label]) => {
         let cla = 'TabItem';
         if (key == rctx.tab)
@@ -65,7 +74,7 @@ export function TabbedPane()
         tabcontent = <CallActivity />;
         break;
     case 'map':
-        tabcontent = <GameMap mobiles={ [] } />;
+        tabcontent = <GameMap mobiles={ mobiles } />;
         break;
     case 'globals':
         tabcontent = <GlobalState />;
