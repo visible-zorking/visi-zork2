@@ -38,8 +38,6 @@ export function sourceloc_for_key(filekey: string) : string
     return filekey + ':1:1:1:0';
 }
 
-const sourcefile_capkey_map: SourceFileMap = (window as any).gamedat_sourcefile_capkeymap;
-
 /* Turn a location in "GVERBS-90" form into "J:90:1" form.
    (This format turns up in the commentary system.)
 */
@@ -142,6 +140,8 @@ export function check_commentary(id: string, idtype: string) : string|undefined
 interface SourceFileMap {
     [key: string]: string;
 }
+
+const sourcefile_capkey_map: SourceFileMap = (window as any).gamedat_sourcefile_capkeymap;
 
 export const sourcefile_map: SourceFileMap = {
     A: 'zork2.zil',
