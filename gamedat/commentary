@@ -18,7 +18,7 @@ rtn:V-VERSION: Print the title, release, and serial number.
 src:GVERBS-89: The TRS-80 interpreter set a special bit which told the game to change certain behavior for no-doubt-contractual reasons. For Zork 2, it adds the line “Licensed to Tandy Corporation”.
 	For a complete list of “Tandy bit” behavior changes in Infocom games, [see this page|https://ifarchive.org/if-archive/infocom/info/tandy_bits.html].
 
-objtree-legend: In this list, `Rooms` are rooms and `Items` are regular items. (Sometimes portable, sometimes not.)
+OBJTREE-LEGEND: In this list, `Rooms` are rooms and `Items` are regular items. (Sometimes portable, sometimes not.)
 	`Scen` indicates scenery objects. These exist in multiple places; for example, the [~obj:MOSS] is visible from many locations near the entrance.
 	`Glob` indicates a global object, which is *always* visible, or at least mentionable. For example, [~obj:GRUE] is global – not because grues are always present, but so you can always ask `WHAT IS A GRUE`.
 
@@ -180,6 +180,7 @@ glob:DIAMOND-MOVES: This tracks how many wrong moves you’ve made in the maze. 
 
 glob:DIAMOND-BASE: This tracks the farthest progress you’ve ever made in the maze. The Wizard uses this as part of his taunt: “You’ll never get past *second* base!”
 
+FILES-LEGEND: The last file, crufty.zil, is a bit odd. See [this note|src:ZORK2-34].
 
 src:CRUFTY-1: Weirdly, nothing ever includes this file. See [zork.zil|src:ZORK2-34].
 	The [rtn:I-LANTERN] routine is definitely part of the game file. So we know the compiler read this file in. But it’s not obvious how.
@@ -188,6 +189,7 @@ src:ZORK2-34: Notice something missing? There's no `IFILE` line ("include file")
 	The [rtn:I-LANTERN] routine is definitely part of the game file. So we know the compiler read crufty.zil in. But it’s not obvious how.
 	Furthermore, when I analyzed the game file, I found that functions were *not* generated in the order of the `IFILE` lines here. (In Zork 1, functions *were* generated in `IFILE` order.)
 	My best guess is that the zork2.zil file was rewritten after July 26 1984, but the game was never recompiled.
+
 
 glob:DUMMY: `DUMMY` gives random responses for silly commands, like `CLOSE DOOR` when the door isn’t open.
 	This table is defined in two places in the source, with different contents. See [GVERBS|~src:GVERBS-2133]. The compiler apparently didn’t report this as an error, and the developers didn’t notice.
