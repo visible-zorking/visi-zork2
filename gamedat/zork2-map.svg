@@ -25,15 +25,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="843"
-     inkscape:cy="929"
+     inkscape:zoom="1"
+     inkscape:cx="940.5"
+     inkscape:cy="694.5"
      inkscape:window-width="1976"
      inkscape:window-height="1103"
      inkscape:window-x="2093"
      inkscape:window-y="66"
      inkscape:window-maximized="0"
-     inkscape:current-layer="connlayer">
+     inkscape:current-layer="decorlayer">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -254,8 +254,7 @@
     <path
        id="path259"
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#fcfcfc;fill-opacity:1;fill-rule:evenodd;stroke:#c8c8c8;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;stop-color:#000000;stop-opacity:1"
-       d="m 143.00781,102.31469 c 10.21106,18.18393 1.26816,138.60589 -4.63073,152.74365 l 70.64375,0.26459 c -7.01145,-25.79687 -28.36632,-31.28249 -31.05546,-49.14635 -2.68915,-17.86386 -4.45152,-89.3877 0.92604,-103.68465 -10.46306,0.10227 -26.72455,0.24325 -35.8836,-0.17724 z"
-       sodipodi:nodetypes="ccczcc" />
+       d="M 144.80511 107.26839 C 152.03713 136.12034 143.88173 241.86544 138.37708 255.05833 L 209.02083 255.32291 C 202.00938 229.52604 180.6545 224.04042 177.96536 206.17656 C 175.50591 189.83855 173.82149 128.61615 177.66564 107.33918 C 168.24238 107.7106 155.8785 107.71427 144.80511 107.26839 z " />
   </g>
   <g
      inkscape:groupmode="layer"
