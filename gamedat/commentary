@@ -89,6 +89,8 @@ glob:P-WON: Set if the parser successfully parsed a command. (As opposed to a bl
 
 glob:WON-FLAG: Set when you reach the [final room|~obj:ZORK3] (with the wand) and thus win the game. Since the game then ends immediately, the flag is only used in reporting your [final score|~src:2ACTIONS-3877].
 
+glob:LUCKY: In Zork 2, you are always lucky.
+
 glob:C-INTS: Indicates how much of the timer table ([*glob:C-TABLE]) is used. This counts down from `C-TABLELEN`, which is 180.
 
 glob:C-DEMONS: Indicates how much of the timer table is used for daemons. (No relation to the wizard’s [demon|~obj:GENIE]!)
