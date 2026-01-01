@@ -84,6 +84,11 @@ glob:FANTASIES: A table of hallucinations which can result from the `FANTASIZE` 
 
 src:GVERBS-1712: In earlier versions of Zork 2, there was code here to display [~glob:FANTASIES] if you were under the `FANTASIZE` spell. Unfortunately, when renovating the Zorks in 1984, this code was somehow lost. The `FANTASIZE` spell is now broken.
 
+glob:P-WON: Set if the parser successfully parsed a command. (As opposed to a blank line or an error.)
+	No relation to whether the *player* has won; that’s [*glob:WON-FLAG].
+
+glob:WON-FLAG: Set when you reach the [final room|~obj:ZORK3] (with the wand) and thus win the game. Since the game then ends immediately, the flag is only used in reporting your [final score|~src:2ACTIONS-3877].
+
 glob:C-INTS: Indicates how much of the timer table ([*glob:C-TABLE]) is used. This counts down from `C-TABLELEN`, which is 180.
 
 glob:C-DEMONS: Indicates how much of the timer table is used for daemons. (No relation to the wizard’s [demon|~obj:GENIE]!)
@@ -94,6 +99,8 @@ glob:C-TABLE: The timer table. See the “Timers” tab for a current listing.
 TIMERS-LEGEND: A list of the timers running (or paused) in the timer table ([~glob:C-TABLE]). Positive numbers count down (while enabled) and call the named function after that many turns. Negative numbers are called every turn while the timer is enabled.
 	This list only grows as you play; timers can be added, started, and stopped, but not removed.
 	Note that enabled negative timers, like [*rtn:I-SWORD], count down towards “negative infinity”. They’ll wrap and stop working after 65535 turns, but back then nobody worried about this!
+
+rtn:GO: Set up the world at the start of the game. Start the timers. Print the banner. Set all those useful globals like [~glob:HERE] and [~glob:PLAYER].
 
 
 obj:GENIE: The game generally refers to the Big Bad as a “demon”, but “genie” is occasionally used as well.
