@@ -183,6 +183,12 @@ glob:DIAMOND-MOVES: This tracks how many wrong moves you’ve made in the maze. 
 glob:DIAMOND-BASE: This tracks the farthest progress you’ve ever made in the maze. The Wizard uses this as part of his taunt: “You’ll never get past *second* base!”
 
 
+rtn:I-BUCKET: When you pour water into the bucket, it slowly evaporates. This timer routine handles its eventual disappearance.
+
+src:2ACTIONS-844: “Kick the bucket,” as in “die.” Get it?
+
+glob:EVAPORATED: If set, the bucket is descending because the water evaporated (rather than because you removed the water yourself).
+
 obj:FOOTPAD: There is no footpad. (The Thief died in Zork 1, remember?) This object exists so that you can ask `WHAT IS A FOOTPAD` after reading the sign in the [~obj:CAGE-ROOM].
 
 
