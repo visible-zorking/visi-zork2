@@ -187,6 +187,6 @@ Thus, the Zork 2 source code is copyright 2025 by Microsoft. As of November 2025
 
 [oz]: https://opensource.microsoft.com/blog/2025/11/20/preserving-code-that-shaped-generations-zork-i-ii-and-iii-go-open-source
 
-Aside from the above, the Visible Zorker is copyright 2025 by Andrew Plotkin. My work on this project is under the MIT license.
+Aside from the above, the Visible Zorker is copyright 2025-2026 by Andrew Plotkin. My work on this project is under the MIT license.
 
 
