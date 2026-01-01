@@ -520,6 +520,15 @@ Global 167 ACTIONS  table created from SYNTAX
 Global 168 PREACTIONS  table created from SYNTAX
 Global 169 VERBS  table created from SYNTAX
 
+# Argument type info for routines that are hard to guess.
+
+RoutineType - CLAUSE - - WORD
+RoutineType - JIGS-UP STR -
+RoutineType - OPEN-CLOSE OBJ STR STR
+RoutineType - PERFORM VERB PERFORMO PERFORMI
+RoutineType - ROB OBJ OBJ -
+RoutineType - WT? WORD - -
+
 # Map connections that don't come directly from room properties.
 # (These are used for the "list rooms in order of closeness to you"
 # display tab.)
