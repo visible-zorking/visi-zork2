@@ -45,6 +45,7 @@ glob:HERE: The location of the [*glob:WINNER].
 glob:LIT: Whether the current location has light. Set by calling the [rtn:LIT?] routine.
 
 glob:ALWAYS-LIT: Whether the player is inherently emitting light. The Wizard might cast `FLUORESCE` on you if he finds you in the dark.
+	(The flag is never removed, so the spell is permanent. This will cause you trouble in the Crypt.)
 
 rtn:LIT?: Determine whether a given location has light. This is true if the room or anything in it has [attr:ONBIT]. It’s also true if the player is [glob:ALWAYS-LIT].
 	This routine is used to set the [glob:LIT] variable. It’s also used to determine visibility in some other situations. For example, if you peer out from inside a sphere, or look through the keyhole, the game checks whether you can see only darkness.
@@ -226,6 +227,8 @@ src:GVERBS-912: This is clearly intended to be the response to `ODYSSEUS`, but i
 
 rtn:BLAST: This provides a custom response in the Dusty Room. Sadly, the `BLAST` routine is never called, so the effort is wasted. (The command `BLAST` is handled by [~rtn:V-BLAST].)
 	The compiler has discarded the string but not the routine, which is an interesting optimization choice.
+
+src:GVERBS-523: You can cast `FLUORESCE` with the wand, but the implementation is a bit broken. First, the spell is permanent; it’s not removed in [~rtn:V-DISENCHANT]. Fair enough – it’s permanent when the [Wizard casts it|glob:ALWAYS-LIT] too. But it also sets `LIGHTBIT`, meaning the player can then turn the fluorescing object on and off at will!
 
 ### snapshots of ascii art
 
