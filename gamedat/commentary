@@ -142,6 +142,19 @@ obj:PALANTIR-4: The game lets you refer to the spheres as `PALANTIRS`, but it do
 rtn:I-SPHERE: This is the timer routine for dying in the [cage|~obj:IN-CAGE].
 
 
+obj:COIN: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+	The art doesn’t render very well in the source pane, but you can see the original coin [here|https://eblong.com/infocom/visi-zork2/pic/coin-art.png].
+
+obj:STAMP: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+	The art doesn’t render very well in the source pane, but you can see the original stamp [here|https://eblong.com/infocom/visi-zork2/pic/stamp-art.png].
+
+obj:BILLS: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+	The art doesn’t render very well in the source pane, but you can see the original bills [here|https://eblong.com/infocom/visi-zork2/pic/bills-art.png].
+
+obj:PORTRAIT: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+	The art doesn’t render very well in the source pane, but you can see the original portrait [here|https://eblong.com/infocom/visi-zork2/pic/portrait-art.png].
+
+
 obj:DIAMOND-5: The Map tab shows the rooms as laid out by their direction properties. ([~obj:DIAMOND-2] is `NORTH` of [~obj:DIAMOND-5] and so on.) But the puzzle solution has nothing to do with this layout! See [rtn:DIAMOND-MOTION].
 	Once the maze is solved ([~glob:DIAMOND-SOLVE]), you are no longer confused and movement follows the map as shown.
 
@@ -210,7 +223,7 @@ FILES-LEGEND: The last file, crufty.zil, is a bit odd. See [this note|src:ZORK2-
 src:CRUFTY-1: Weirdly, nothing ever includes this file. See [zork.zil|src:ZORK2-34].
 	The [rtn:I-LANTERN] routine is definitely part of the game file. So we know the compiler read this file in. But it’s not obvious how.
 
-src:ZORK2-34: Notice something missing? There's no `IFILE` line ("include file") for [crufty.zil|~src:CRUFTY-1].
+src:ZORK2-34: Notice something missing? There’s no `IFILE` line (“include file”) for [crufty.zil|~src:CRUFTY-1].
 	The [rtn:I-LANTERN] routine is definitely part of the game file. So we know the compiler read crufty.zil in. But it’s not obvious how.
 	Furthermore, when I analyzed the game file, I found that functions were *not* generated in the order of the `IFILE` lines here. (In Zork 1, functions *were* generated in `IFILE` order.)
 	My best guess is that the zork2.zil file was rewritten after July 26 1984, but the game was never recompiled.
@@ -230,5 +243,4 @@ rtn:BLAST: This provides a custom response in the Dusty Room. Sadly, the `BLAST`
 
 src:GVERBS-523: You can cast `FLUORESCE` with the wand, but the implementation is a bit broken. First, the spell is permanent; it’s not removed in [~rtn:V-DISENCHANT]. Fair enough – it’s permanent when the [Wizard casts it|glob:ALWAYS-LIT] too. But it also sets `LIGHTBIT`, meaning the player can then turn the fluorescing object on and off at will!
 
-### snapshots of ascii art
 
