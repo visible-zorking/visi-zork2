@@ -142,16 +142,16 @@ obj:PALANTIR-4: The game lets you refer to the spheres as `PALANTIRS`, but it do
 rtn:I-SPHERE: This is the timer routine for dying in the [cage|~obj:IN-CAGE].
 
 
-obj:COIN: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+obj:COIN: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here – no doubt to save space.
 	The art doesn’t render very well in the source pane, but you can see the original coin [here|https://eblong.com/infocom/visi-zork2/pic/coin-art.png].
 
-obj:STAMP: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+obj:STAMP: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here – no doubt to save space.
 	The art doesn’t render very well in the source pane, but you can see the original stamp [here|https://eblong.com/infocom/visi-zork2/pic/stamp-art.png].
 
-obj:BILLS: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+obj:BILLS: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here – no doubt to save space.
 	The art doesn’t render very well in the source pane, but you can see the original bills [here|https://eblong.com/infocom/visi-zork2/pic/bills-art.png].
 
-obj:PORTRAIT: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here -- no doubt to save space.
+obj:PORTRAIT: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here – no doubt to save space.
 	The art doesn’t render very well in the source pane, but you can see the original portrait [here|https://eblong.com/infocom/visi-zork2/pic/portrait-art.png].
 
 
