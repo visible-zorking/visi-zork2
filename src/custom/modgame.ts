@@ -6,11 +6,24 @@ export function show_commentary_hook(topic: string, engine: GnustoEngine): strin
 {
     if (topic == 'BATTERIES') {
         refresh_batteries(engine);
+        return null;
     }
     if (topic == 'TRY-SPELL') {
         if (!wizard_timer_active(engine)) {
             return 'TRY-SPELL-TOO-LATE';
         }
+        return null;
+    }
+    if (topic == 'TRY-SPELL-FLUORESCE') {
+        if (global_always_lit(engine)) {
+            return 'TRY-SPELL-FLUORESCE-ALREADY';
+        }
+        set_always_lit(engine);
+        return null;
+    }
+    if (topic == 'TRY-SPELL-FLUORESCE-END') {
+        unset_always_lit(engine);
+        return null;
     }
     if (topic.startsWith('TRY-SPELL-')) {
         if (!wizard_timer_active(engine)) {
@@ -25,7 +38,7 @@ export function show_commentary_hook(topic: string, engine: GnustoEngine): strin
         rig_wizard_spell(pos, engine);
         return null;
     }
-    
+
     return null;
 }
 
@@ -129,4 +142,57 @@ function rig_wizard_spell(spellnum: number, engine: GnustoEngine)
     engine.rig_vm_random(0x10EAA, spellnum);
     // L3501: <PROB 75>: The Wizard casts audibly, rather than whispering
     engine.rig_vm_random(0x10ED1, 0);
+}
+
+function global_always_lit(engine: GnustoEngine): boolean
+{
+    // This should be the same as the last report we got this turn.
+    let report = engine.get_vm_report();
+
+    let ALWAYS_LIT = gamedat_global_names.get('ALWAYS-LIT');
+    if (!ALWAYS_LIT)
+        return false;
+
+    if (report.globals[ALWAYS_LIT.num])
+        return true;
+    return false;
+}
+
+function set_always_lit(engine: GnustoEngine)
+{
+    // The Wizard's FLUORESCE effect sets both LIT and ALWAYS-LIT to true.
+    
+    let ALWAYS_LIT = gamedat_global_names.get('ALWAYS-LIT');
+    if (!ALWAYS_LIT)
+        return false;
+
+    let LIT = gamedat_global_names.get('LIT');
+    if (!LIT)
+        return false;
+
+    engine.setWord(1, engine.m_vars_start+ALWAYS_LIT.num*2);
+    engine.setWord(1, engine.m_vars_start+LIT.num*2);
+
+    // But now we have to trigger the generation of a new report,
+    // so that the Globals UI updates. This is a hack; it leaves the
+    // Activity tab looking bare. Sorry!
+    
+    engine.reset_vm_report();
+    window.dispatchEvent(new Event('zmachine-update'));
+}
+
+function unset_always_lit(engine: GnustoEngine)
+{
+    let ALWAYS_LIT = gamedat_global_names.get('ALWAYS-LIT');
+    if (!ALWAYS_LIT)
+        return false;
+
+    engine.setWord(0, engine.m_vars_start+ALWAYS_LIT.num*2);
+
+    // But now we have to trigger the generation of a new report,
+    // so that the Globals UI updates. This is a hack; it leaves the
+    // Activity tab looking bare. Sorry!
+    
+    engine.reset_vm_report();
+    window.dispatchEvent(new Event('zmachine-update'));
 }
