@@ -292,9 +292,31 @@ BATTERIES: Your lantern is now refreshed.
 	(Take a look at the “Timers” tab.)
 
 TRY-SPELL: The Wizard has a list of twelve [spells|~glob:SPELL-NAMES] that he casts on you. Select one:
-	“[Feeble|TRY-SPELL-FEEBLE]”, “Fumble”, “Fear”, “Filch”, “Freeze”, “Fall”, “Ferment”, “Fierce”, “Float”, “Fireproof”, “Fence”, “Fantasize”. Or “Fluoresce”, which he only casts in [specific circumstances|src:2ACTIONS-3443].
+	“[Feeble|TRY-SPELL-FEEBLE]”, “[Fumble|TRY-SPELL-FUMBLE]”, “[Fear|TRY-SPELL-FEAR]”, “[Filch|TRY-SPELL-FILCH]”, “[Freeze|TRY-SPELL-FREEZE]”, “[Fall|TRY-SPELL-FALL]”, “[Ferment|TRY-SPELL-FERMENT]”, “[Fierce|TRY-SPELL-FIERCE]”, “[Float|TRY-SPELL-FLOAT]”, “[Fireproof|TRY-SPELL-FIREPROOF]”, “[Fence|TRY-SPELL-FENCE]”, “[Fantasize|TRY-SPELL-FANTASIZE]”. Or “Fluoresce”, which he only casts in [specific circumstances|src:2ACTIONS-3443].
 
 TRY-SPELL-FEEBLE: The Wizard will cast “Feeble” at the next opportunity.
+
+TRY-SPELL-FUMBLE: The Wizard will cast “Fumble” at the next opportunity.
+
+TRY-SPELL-FEAR: The Wizard will cast “Fear” at the next opportunity.
+
+TRY-SPELL-FILCH: The Wizard will cast “Filch” at the next opportunity.
+
+TRY-SPELL-FREEZE: The Wizard will cast “Freeze” at the next opportunity.
+
+TRY-SPELL-FALL: The Wizard will cast “Fall” at the next opportunity.
+
+TRY-SPELL-FERMENT: The Wizard will cast “Ferment” at the next opportunity.
+
+TRY-SPELL-FIERCE: The Wizard will cast “Fierce” at the next opportunity.
+
+TRY-SPELL-FLOAT: The Wizard will cast “Float” at the next opportunity.
+
+TRY-SPELL-FIREPROOF: The Wizard will cast “Fireproof” at the next opportunity.
+
+TRY-SPELL-FENCE: The Wizard will cast “Fence” at the next opportunity.
+
+TRY-SPELL-FANTASIZE: The Wizard will cast “Fantasize” at the next opportunity. But remember that this spell [does not work|src:GVERBS-1712] in this release of Zork 2.
 
 TRY-SPELL-TOO-LATE: The Wizard no longer casts spells at this stage of the game.
 
