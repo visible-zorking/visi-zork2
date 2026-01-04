@@ -244,3 +244,45 @@ rtn:BLAST: This provides a custom response in the Dusty Room. Sadly, the `BLAST`
 src:GVERBS-523: You can cast `FLUORESCE` with the wand, but the implementation is a bit broken. First, the spell is permanent; it’s not removed in [~rtn:V-DISENCHANT]. Fair enough – it’s permanent when the [Wizard casts it|glob:ALWAYS-LIT] too. But it also sets `LIGHTBIT`, meaning the player can then turn the fluorescing object on and off at will!
 
 
+com-maze-1: You are in a small room with evenly-angled walls.
+	You can go [north|com-maze-4], [east|com-maze-2], or [west|com-maze-3].
+
+com-maze-2: You are in a small room with evenly-angled walls.
+	You can go [south|com-maze-1], [down|com-maze-3], or [north|com-maze-1].
+
+com-maze-3: You are in a small room with evenly-angled walls.
+	You can go [west|com-maze-2], [northwest|com-maze-1], or [north|com-maze-1].
+
+com-maze-4: You are in a small room with evenly-angled walls.
+	You can go [west|com-maze-5], [northeast|com-maze-6], or [north|com-maze-7].
+
+com-maze-5: You are in a small room with evenly-angled walls.
+	You can go [southeast|com-maze-6], [north|com-maze-4], or [east|com-maze-6].
+
+com-maze-6: You are in a small room with evenly-angled walls.
+	You can go [north|com-maze-4], [south|com-maze-5], or [up|com-maze-5].
+
+com-maze-7: You are in a small room with evenly-angled walls.
+	You can go [down|com-maze-8], [north|com-maze-10], or [east|com-maze-9].
+
+com-maze-8: You are in a small room with evenly-angled walls.
+	You can go [north|com-maze-7], [west|com-maze-9], or [east|com-maze-9].
+
+com-maze-9: You are in a small room with evenly-angled walls.
+	You can go [up|com-maze-8], [west|com-maze-8], or [north|com-maze-7].
+
+com-maze-10: You are in a small room with evenly-angled walls.
+	You can go [north|com-maze-13], [west|com-maze-11], or [southeast|com-maze-12].
+
+com-maze-11: You are in a small room with evenly-angled walls.
+	You can go [south|com-maze-12], [down|com-maze-12], or [north|com-maze-10].
+
+com-maze-12: You are in a small room with evenly-angled walls.
+	You can go [south|com-maze-11], [north|com-maze-10], or [northeast|com-maze-11].
+
+com-maze-13: You have reached a dead end. There is a massive vending machine here.
+	[Press the button|BATTERIES] to receive fresh batteries for your lantern!
+
+batteries: Your lantern is now refreshed.
+	(Take a look at the “Timers” tab.)
+
