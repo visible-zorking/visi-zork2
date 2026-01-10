@@ -229,8 +229,10 @@ export function AboutPage()
                 <p>
                     Aside from the above, the Visible Zorker is copyright
                     2025-2026 by Andrew Plotkin. MIT license;{' '}
-                    <ExtWebLink url={ 'https://github.com/erkyrath/visizork2' } text={ 'Github repo' } />;
-                    {' '}last updated { lastupdate }.
+                    <ExtWebLink url={ 'https://github.com/erkyrath/visizork2' } text={ 'Github repo' } />.
+                </p>
+                <p>
+                    Last updated <b>{ lastupdate }</b>.
                     This exhibit is hosted by the{' '}
                     <ExtWebLink url={ 'https://eblong.com/infocom/' } text={ 'Obsessively Complete Infocom Catalog' } />.
                 </p>
