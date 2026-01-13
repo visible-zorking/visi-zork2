@@ -107,10 +107,18 @@ rtn:GO: Set up the world at the start of the game. Start the timers. Print the b
 
 obj:GENIE: The game generally refers to the Big Bad as a “demon”, but “genie” is occasionally used as well.
 
-rtn:I-SWORD: This routine runs every turn that you are carrying the sword. It checks adjacent rooms for enemies and displays the “sword is glowing” message.
+obj:SWORD: The sword has [PROP:VALUE] zero. Any object with a `VALUE` property is considered a treasure (even if the value is zero). This means that the sword is accepted as a gift by the [gnomes|~rtn:GNOME-FCN], the [dragon|~src:2ACTIONS-2376]... and the genie. See [this bug|src:2ACTIONS-3259].
+
+rtn:I-SWORD: This routine runs every turn that you are carrying the [obj:SWORD]. It checks adjacent rooms for enemies and displays the “sword is glowing” message.
 	The sword’s glow level is stored in the [glob:SWORD-GLOW] variable.
 
 glob:SWORD-GLOW: Set by [rtn:I-SWORD].
+
+const:TREASURES-MAX: The number of treasures that the genie desires. See [this bug|src:2ACTIONS-3259].
+
+src:2ACTIONS-3259: The genie accepts any object with the [PROP:VALUE] property. As noted at [~const:TREASURES-MAX], his treasure count does *not* include the palantirs, the candy, the collar, and the wand. Those objects are used up or unreachable while the genie is active.
+	However, in this version of Zork 2, the [~obj:SWORD] also has the [PROP:VALUE] property. So you can use it to bribe the [gnomes|~rtn:GNOME-FCN], which makes sense – and the genie, which doesn’t!
+	By offering the sword to the genie, you can skip collecting any of the other treasures. Or give the sword to the genie as a bonus, and win the game with 402 points.
 
 rtn:I-LANTERN: This routine sits in the timers table. When it fires, it prints a “lantern has gotten dimmer” message and re-queues itself for the next dimming stage. (Until the lantern goes out entirely, of course.) The messages themselves (and their durations) are found in [*glob:LAMP-TABLE].
 
