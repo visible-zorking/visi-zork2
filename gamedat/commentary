@@ -225,7 +225,14 @@ src:2ACTIONS-844: “Kick the bucket,” as in “die.” Get it?
 
 glob:EVAPORATED: If set, the bucket is descending because the water evaporated (rather than because you removed the water yourself).
 
+src:2ACTIONS-789: This move can’t happen. See [obj:SALTY-WATER].
+
+src:2ACTIONS-791: You can lower the bucket with `GET WATER`. This is pragmatic – otherwise you’d have to wait for the water to [evaporate|rtn:I-BUCKET]. But scraping a puddle into a teapot makes no physical sense. Yes, this bothered me when I was twelve.
+
 obj:FOOTPAD: There is no footpad. (The Thief died in Zork 1, remember?) This object exists so that you can ask `WHAT IS A FOOTPAD` after reading the sign in the [~obj:CAGE-ROOM].
+
+obj:SALTY-WATER: This is supposed to represent water from the [~obj:POOL-ROOM]. However, the logic in [WATER-FCN|~src:2ACTIONS-789] doesn’t work; it’s impossible to take the `SALTY-WATER`. So the object is useless.
+	(In previous versions of Zork 2, you could get the `SALTY-WATER`, but it was very buggy.)
 
 
 obj:IN-AQUARIUM: You can’t enter the aquarium (and live). The room only exists to provide a description for peering into the blue sphere.
