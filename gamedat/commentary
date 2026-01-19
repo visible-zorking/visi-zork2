@@ -158,6 +158,9 @@ rtn:I-SPHERE: This is the timer routine for dying in the [cage|~obj:IN-CAGE].
 src:2ACTIONS-176: This section handles much of the [~obj:RECEPTACLE] logic. However, it only applies when you are *in* the [~obj:BALLOON]. (The player’s location can override actions in the `M-BEG` phase of [PERFORM|~src:GMAIN-196].) The receptacle is reachable from outside the balloon, which leads to a few bugs.
 	(c:Torbjörn Andersson)
 
+src:2ACTIONS-271: The description aligns neatly with the [CANYON-VIEW|https://eblong.com/infocom/visi-zork1/#OBJ:CANYON-VIEW] in Zork 1.
+
+
 obj:COIN: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here – no doubt to save space.
 	The art doesn’t render very well in the source pane, but you can see the original coin [here|https://eblong.com/infocom/visi-zork2/pic/coin-art.png].
 
