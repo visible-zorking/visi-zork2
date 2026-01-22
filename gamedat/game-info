@@ -493,13 +493,13 @@ Global 142 P-TABLE
 ### PRSO is a property when PRSA is WALK. Tweak?
 Global 143 PRSO  OBJ
 Global 144 PRSI  OBJ
-Global 145 PRSA  VERB
+Global 145 PRSA  ACTION
 Global 146 GWIM-DISABLE  UNUSED
 Global 147 P-NOT-HERE
 Global 148 P-MULT
 Global 149 L-PRSI  OBJ
 Global 150 L-PRSO  OBJ
-Global 151 L-PRSA  VERB
+Global 151 L-PRSA  ACTION
 Global 152 DEBUG
 Global 153 P-WON
 Global 154 PLAYER  OBJ
@@ -529,7 +529,7 @@ RoutineType - HELLO? OBJ
 RoutineType - JIGS-UP STR -
 RoutineType - OPEN-CLOSE OBJ STR STR
 RoutineType - P-DOOR STR OBJ OBJ
-RoutineType - PERFORM VERB PERFORMO PERFORMI
+RoutineType - PERFORM ACTION PERFORMO PERFORMI
 RoutineType - ROB OBJ OBJ -
 RoutineType - WT? WORD - -
 
