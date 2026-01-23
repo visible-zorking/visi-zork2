@@ -5,31 +5,32 @@ Story file is gamedat/zork2-r48-s840904.z3
 
   Verb entries = 135
 
-255. 1 entry, verb = "zork"
+255. 1 entry at 2cc3, verb = "zork"
     [00 00 00 00 00 00 00 92] "zork"
 
-254. 1 entry, verb = "scream", synonyms = "shout", "yell"
+254. 1 entry at 2ccd, verb = "scream", synonyms = "shout", "yell"
     [00 00 00 00 00 00 00 91] "scream"
 
-253. 1 entry, verb = "wish"
+253. 1 entry at 2cd7, verb = "wish"
     [00 00 00 00 00 00 00 90] "wish"
 
-252. 2 entries, verb = "wind"
+252. 2 entries at 2ce1, verb = "wind"
     [01 fc 00 00 00 00 00 8f] "wind up OBJ"
     [01 00 00 00 00 00 00 8f] "wind OBJ"
 
-251. 1 entry, verb = "win", synonyms = "winnag"
+251. 1 entry at 2cf3, verb = "win", synonyms = "winnag"
     [00 00 00 00 00 00 00 8e] "win"
 
-250. 1 entry, verb = "wear"
+250. 1 entry at 2cfd, verb = "wear"
     [01 00 00 00 00 00 00 68] "wear OBJ"
 
-249. 3 entries, verb = "aim", synonyms = "brandi", "point", "wave"
+249. 3 entries at 2d07, verb = "aim", synonyms = "brandi", "point", "wave"
     [01 f3 00 00 00 00 00 8d] "aim at OBJ"
     [02 00 f3 00 00 ca 00 8d] "aim OBJ at OBJ"
     [01 00 00 00 00 ca 00 8d] "aim OBJ"
 
-248. 10 entries, verb = "go", synonyms = "procee", "run", "step", "walk"
+248. 10 entries at 2d21, verb = "go", synonyms = "procee", "run", "step",
+                                                 "walk"
     [01 fa 00 17 00 30 00 20] "go down OBJ"
     [01 fc 00 17 00 30 00 1f] "go up OBJ"
     [01 f1 00 00 00 00 00 8c] "go around OBJ"
@@ -41,21 +42,22 @@ Story file is gamedat/zork2-r48-s840904.z3
     [01 f7 00 00 00 00 00 8a] "go away OBJ"
     [01 00 00 00 00 00 00 8a] "go OBJ"
 
-247. 2 entries, verb = "awake", synonyms = "startl", "surpri", "wake"
+247. 2 entries at 2d73, verb = "awake", synonyms = "startl", "surpri", "wake"
     [01 fc 00 1e 00 30 00 89] "awake up OBJ"
     [01 00 00 1e 00 30 00 89] "awake OBJ"
 
-246. 1 entry, verb = "wait", synonyms = "z"
+246. 1 entry at 2d85, verb = "wait", synonyms = "z"
     [00 00 00 00 00 00 00 88] "wait"
 
-245. 2 entries, verb = "free", synonyms = "unatta", "unfast", "unhook", "untie"
+245. 2 entries at 2d8f, verb = "free", synonyms = "unatta", "unfast", "unhook",
+                                                  "untie"
     [02 00 f8 00 00 f0 00 87] "free OBJ from OBJ"
     [01 00 00 00 00 f0 00 87] "free OBJ"
 
-244. 1 entry, verb = "unlock"
+244. 1 entry at 2da1, verb = "unlock"
     [02 00 fe 00 1c 30 f8 86] "unlock OBJ with OBJ"
 
-243. 6 entries, verb = "flip", synonyms = "set", "shut", "turn"
+243. 6 entries at 2dab, verb = "flip", synonyms = "set", "shut", "turn"
     [02 00 f2 0f 00 00 00 5a] "flip OBJ for OBJ"
     [02 00 ff 0f 00 00 00 5a] "flip OBJ to OBJ"
     [01 f4 00 13 00 fa 00 17] "flip off OBJ"
@@ -63,14 +65,14 @@ Story file is gamedat/zork2-r48-s840904.z3
     [01 f9 00 1f 00 f0 00 0f] "flip on OBJ"
     [02 00 fe 0f 1c f0 f2 5a] "flip OBJ with OBJ"
 
-242. 1 entry, verb = "temple", synonyms = "treasu"
+242. 1 entry at 2ddd, verb = "temple", synonyms = "treasu"
     [00 00 00 00 00 00 00 85] "temple"
 
-241. 2 entries, verb = "attach", synonyms = "fasten", "secure", "tie"
+241. 2 entries at 2de7, verb = "attach", synonyms = "fasten", "secure", "tie"
     [02 fc fe 1e 1c 30 f2 84] "attach up OBJ with OBJ"
     [02 00 ff 00 00 00 00 83] "attach OBJ to OBJ"
 
-240. 7 entries, verb = "chuck", synonyms = "hurl", "throw", "toss"
+240. 7 entries at 2df9, verb = "chuck", synonyms = "hurl", "throw", "toss"
     [02 00 f6 00 00 c2 00 82] "chuck OBJ over OBJ"
     [02 00 f4 00 00 c2 00 82] "chuck OBJ off OBJ"
     [02 00 f9 00 00 c2 00 33] "chuck OBJ on OBJ"
@@ -79,12 +81,12 @@ Story file is gamedat/zork2-r48-s840904.z3
     [02 00 fe 00 1e c2 30 80] "chuck OBJ with OBJ"
     [02 00 f3 00 1e c2 30 80] "chuck OBJ at OBJ"
 
-239. 2 entries, verb = "ask", synonyms = "tell"
+239. 2 entries at 2e33, verb = "ask", synonyms = "tell"
     [02 00 ee 1e 00 20 00 70] "ask OBJ about OBJ"
     [01 00 00 1e 00 20 00 70] "ask OBJ"
 
-238. 8 entries, verb = "carry", synonyms = "catch", "get", "grab", "hold",
-                                           "remove", "take"
+238. 8 entries at 2e45, verb = "carry", synonyms = "catch", "get", "grab",
+                                                   "hold", "remove", "take"
     [02 00 f8 11 00 64 00 5e] "carry OBJ from OBJ"
     [02 00 f4 11 00 64 00 5e] "carry OBJ off OBJ"
     [02 00 fd 11 00 64 00 5e] "carry OBJ out OBJ"
@@ -94,89 +96,90 @@ Story file is gamedat/zork2-r48-s840904.z3
     [01 fb 00 1b 00 30 00 1a] "carry in OBJ"
     [01 00 00 11 00 34 00 5e] "carry OBJ"
 
-237. 2 entries, verb = "swing", synonyms = "thrust"
+237. 2 entries at 2e87, verb = "swing", synonyms = "thrust"
     [02 00 f3 1d 1e c2 30 7f] "swing OBJ at OBJ"
     [01 00 00 1d 00 c2 00 7f] "swing OBJ"
 
-236. 2 entries, verb = "bathe", synonyms = "swim", "wade"
+236. 2 entries at 2e99, verb = "bathe", synonyms = "swim", "wade"
     [01 fb 00 00 00 00 00 7e] "bathe in OBJ"
     [00 00 00 00 00 00 00 7e] "bathe"
 
-235. 2 entries, verb = "strike"
+235. 2 entries at 2eab, verb = "strike"
     [01 00 00 00 00 f0 00 7d] "strike OBJ"
     [02 00 fe 1e 1d 30 f2 14] "strike OBJ with OBJ"
 
-234. 1 entry, verb = "stay"
+234. 1 entry at 2ebd, verb = "stay"
     [00 00 00 00 00 00 00 7c] "stay"
 
-233. 2 entries, verb = "stand"
+233. 2 entries at 2ec7, verb = "stand"
     [01 fc 00 18 00 00 00 7b] "stand up OBJ"
     [00 00 00 00 00 00 00 7b] "stand"
 
-232. 2 entries, verb = "squeez"
+232. 2 entries at 2ed9, verb = "squeez"
     [02 00 f9 00 00 00 00 13] "squeez OBJ on OBJ"
     [01 00 00 00 00 00 00 7a] "squeez OBJ"
 
-231. 2 entries, verb = "spray"
+231. 2 entries at 2eeb, verb = "spray"
     [02 00 fe 00 00 00 00 79] "spray OBJ with OBJ"
     [02 00 f9 00 00 00 00 78] "spray OBJ on OBJ"
 
-230. 1 entry, verb = "spin"
+230. 1 entry at 2efd, verb = "spin"
     [01 00 00 00 00 00 00 77] "spin OBJ"
 
-229. 1 entry, verb = "smell", synonyms = "sniff"
+229. 1 entry at 2f07, verb = "smell", synonyms = "sniff"
     [01 00 00 00 00 00 00 76] "smell OBJ"
 
-228. 3 entries, verb = "slide"
+228. 3 entries at 2f11, verb = "slide"
     [02 00 ff 00 00 30 00 65] "slide OBJ to OBJ"
     [02 00 00 00 00 30 00 65] "slide OBJ OBJ"
     [02 00 f0 00 00 00 00 67] "slide OBJ under OBJ"
 
-227. 1 entry, verb = "hop", synonyms = "skip"
+227. 1 entry at 2f2b, verb = "hop", synonyms = "skip"
     [00 00 00 00 00 00 00 75] "hop"
 
-226. 1 entry, verb = "shake"
+226. 1 entry at 2f35, verb = "shake"
     [01 00 00 00 00 00 00 74] "shake OBJ"
 
-225. 1 entry, verb = "send"
+225. 1 entry at 2f3f, verb = "send"
     [01 f2 00 00 00 00 00 73] "send for OBJ"
 
-224. 3 entries, verb = "search"
+224. 3 entries at 2f49, verb = "search"
     [01 f2 00 00 00 00 00 3d] "search for OBJ"
     [01 fb 00 00 00 00 00 72] "search in OBJ"
     [01 00 00 00 00 00 00 72] "search OBJ"
 
-223. 1 entry, verb = "say"
+223. 1 entry at 2f63, verb = "say"
     [00 00 00 00 00 00 00 71] "say"
 
-222. 1 entry, verb = "talk"
+222. 1 entry at 2f6d, verb = "talk"
     [01 ff 00 1e 00 20 00 70] "talk to OBJ"
 
-221. 2 entries, verb = "feel", synonyms = "pat", "pet", "rub", "touch"
+221. 2 entries at 2f77, verb = "feel", synonyms = "pat", "pet", "rub", "touch"
     [02 00 fe 00 00 00 00 6f] "feel OBJ with OBJ"
     [01 00 00 00 00 00 00 6f] "feel OBJ"
 
-220. 2 entries, verb = "peal", synonyms = "ring"
+220. 2 entries at 2f89, verb = "peal", synonyms = "ring"
     [02 00 fe 00 00 08 00 6e] "peal OBJ with OBJ"
     [01 00 00 00 00 08 00 6e] "peal OBJ"
 
-219. 1 entry, verb = "repent"
+219. 1 entry at 2f9b, verb = "repent"
     [00 00 00 00 00 00 00 6d] "repent"
 
-218. 4 entries, verb = "read", synonyms = "skim"
+218. 4 entries at 2fa5, verb = "read", synonyms = "skim"
     [02 00 00 10 00 f8 00 6c] "read OBJ OBJ"
     [02 00 fe 10 00 f8 00 54] "read OBJ with OBJ"
     [01 f8 00 10 00 f8 00 54] "read from OBJ"
     [01 00 00 10 00 f8 00 54] "read OBJ"
 
-217. 1 entry, verb = "molest", synonyms = "rape"
+217. 1 entry at 2fc7, verb = "molest", synonyms = "rape"
     [01 00 00 1e 00 00 00 6b] "molest OBJ"
 
-216. 2 entries, verb = "lift", synonyms = "raise"
+216. 2 entries at 2fd1, verb = "lift", synonyms = "raise"
     [01 fc 00 00 00 00 00 6a] "lift up OBJ"
     [01 00 00 00 00 00 00 6a] "lift OBJ"
 
-215. 7 entries, verb = "hide", synonyms = "insert", "place", "put", "stuff"
+215. 7 entries at 2fe3, verb = "hide", synonyms = "insert", "place", "put",
+                                                  "stuff"
     [02 00 ef 00 00 86 00 69] "hide OBJ behind OBJ"
     [01 f9 00 00 00 74 00 68] "hide on OBJ"
     [01 fd 00 13 00 fa 00 17] "hide out OBJ"
@@ -185,7 +188,7 @@ Story file is gamedat/zork2-r48-s840904.z3
     [02 00 f9 00 00 86 00 33] "hide OBJ on OBJ"
     [02 00 fb 00 00 86 00 13] "hide OBJ in OBJ"
 
-214. 6 entries, verb = "press", synonyms = "push"
+214. 6 entries at 301d, verb = "press", synonyms = "push"
     [02 00 f0 00 00 00 00 67] "press OBJ under OBJ"
     [02 00 fe 00 1c 00 00 5a] "press OBJ with OBJ"
     [01 f9 00 00 00 34 00 66] "press on OBJ"
@@ -193,76 +196,77 @@ Story file is gamedat/zork2-r48-s840904.z3
     [02 00 ff 00 00 30 00 65] "press OBJ to OBJ"
     [02 00 00 00 00 30 00 65] "press OBJ OBJ"
 
-213. 2 entries, verb = "pump"
+213. 2 entries at 304f, verb = "pump"
     [02 fc fe 00 00 00 00 64] "pump up OBJ with OBJ"
     [01 fc 00 00 00 00 00 64] "pump up OBJ"
 
-212. 3 entries, verb = "pull", synonyms = "tug", "yank"
+212. 3 entries at 3061, verb = "pull", synonyms = "tug", "yank"
     [01 fc 00 00 00 30 00 59] "pull up OBJ"
     [01 f9 00 00 00 30 00 59] "pull on OBJ"
     [01 00 00 00 00 30 00 59] "pull OBJ"
 
-211. 1 entry, verb = "pray"
+211. 1 entry at 307b, verb = "pray"
     [00 00 00 00 00 00 00 63] "pray"
 
-210. 4 entries, verb = "pour", synonyms = "spill"
+210. 4 entries at 3085, verb = "pour", synonyms = "spill"
     [02 00 f8 00 00 c0 00 32] "pour OBJ from OBJ"
     [02 00 f9 00 00 c0 00 62] "pour OBJ on OBJ"
     [02 00 fb 00 00 c0 00 32] "pour OBJ in OBJ"
     [01 00 00 00 00 c0 00 32] "pour OBJ"
 
-209. 1 entry, verb = "punctu"
+209. 1 entry at 30a7, verb = "punctu"
     [02 00 fe 1e 1d 30 c2 2b] "punctu OBJ with OBJ"
 
-208. 1 entry, verb = "poke"
+208. 1 entry at 30b1, verb = "poke"
     [02 00 fe 1e 1d 30 c2 2b] "poke OBJ with OBJ"
 
-207. 1 entry, verb = "plugh", synonyms = "xyzzy"
+207. 1 entry at 30bb, verb = "plugh", synonyms = "xyzzy"
     [00 00 00 00 00 00 00 61] "plugh"
 
-206. 1 entry, verb = "fix", synonyms = "glue", "patch", "plug", "repair"
+206. 1 entry at 30c5, verb = "fix", synonyms = "glue", "patch", "plug",
+                                               "repair"
     [02 00 fe 00 00 00 00 60] "fix OBJ with OBJ"
 
-205. 1 entry, verb = "play"
+205. 1 entry at 30cf, verb = "play"
     [01 00 00 00 00 00 00 5f] "play OBJ"
 
-204. 3 entries, verb = "pick"
+204. 3 entries at 30d9, verb = "pick"
     [01 fc 00 11 00 14 00 5e] "pick up OBJ"
     [02 00 fe 00 00 00 00 5d] "pick OBJ with OBJ"
     [01 00 00 00 00 00 00 5d] "pick OBJ"
 
-203. 3 entries, verb = "open"
+203. 3 entries at 30f3, verb = "open"
     [02 00 fe 16 1c f0 f2 2c] "open OBJ with OBJ"
     [01 fc 00 16 00 f0 00 2c] "open up OBJ"
     [01 00 00 16 00 f0 00 2c] "open OBJ"
 
-202. 1 entry, verb = "odysse", synonyms = "ulysse"
+202. 1 entry at 310d, verb = "odysse", synonyms = "ulysse"
     [00 00 00 00 00 00 00 5c] "odysse"
 
-201. 1 entry, verb = "mumble", synonyms = "sigh"
+201. 1 entry at 3117, verb = "mumble", synonyms = "sigh"
     [00 00 00 00 00 00 00 5b] "mumble"
 
-200. 1 entry, verb = "roll"
+200. 1 entry at 3121, verb = "roll"
     [01 fc 00 00 00 30 00 59] "roll up OBJ"
 
-199. 3 entries, verb = "move"
+199. 3 entries at 312b, verb = "move"
     [02 00 fe 00 1c 00 00 5a] "move OBJ with OBJ"
     [02 00 fb 00 00 86 00 13] "move OBJ in OBJ"
     [01 00 00 00 00 30 00 59] "move OBJ"
 
-198. 1 entry, verb = "liquif", synonyms = "melt"
+198. 1 entry at 3145, verb = "liquif", synonyms = "melt"
     [02 00 fe 00 19 00 f0 58] "liquif OBJ with OBJ"
 
-197. 1 entry, verb = "make"
+197. 1 entry at 314f, verb = "make"
     [01 00 00 00 00 00 00 57] "make OBJ"
 
-196. 1 entry, verb = "grease", synonyms = "lubric", "oil"
+196. 1 entry at 3159, verb = "grease", synonyms = "lubric", "oil"
     [02 00 fe 00 00 00 c0 56] "grease OBJ with OBJ"
 
-195. 1 entry, verb = "lower"
+195. 1 entry at 3163, verb = "lower"
     [01 00 00 00 00 00 00 55] "lower OBJ"
 
-194. 12 entries, verb = "gaze", synonyms = "l", "look", "stare"
+194. 12 entries at 316d, verb = "gaze", synonyms = "l", "look", "stare"
     [01 f2 00 00 00 00 00 3d] "gaze for OBJ"
     [02 f3 fe 00 00 f0 00 54] "gaze at OBJ with OBJ"
     [01 fb 00 00 00 f4 00 3a] "gaze in OBJ"
@@ -276,47 +280,47 @@ Story file is gamedat/zork2-r48-s840904.z3
     [01 f1 00 18 00 00 00 50] "gaze around OBJ"
     [00 00 00 00 00 00 00 50] "gaze"
 
-193. 1 entry, verb = "lock"
+193. 1 entry at 31cf, verb = "lock"
     [02 00 fe 00 1c 30 f8 4f] "lock OBJ with OBJ"
 
-192. 2 entries, verb = "listen"
+192. 2 entries at 31d9, verb = "listen"
     [01 f2 00 00 00 00 00 4e] "listen for OBJ"
     [01 ff 00 00 00 00 00 4e] "listen to OBJ"
 
-191. 2 entries, verb = "light"
+191. 2 entries at 31eb, verb = "light"
     [02 00 fe 1f 19 f0 ca 1d] "light OBJ with OBJ"
     [01 00 00 1f 00 fa 00 0f] "light OBJ"
 
-190. 2 entries, verb = "leave"
+190. 2 entries at 31fd, verb = "leave"
     [01 00 00 00 00 00 00 32] "leave OBJ"
     [00 00 00 00 00 00 00 4d] "leave"
 
-189. 1 entry, verb = "lean"
+189. 1 entry at 320f, verb = "lean"
     [01 f9 00 00 00 82 00 4c] "lean on OBJ"
 
-188. 1 entry, verb = "launch"
+188. 1 entry at 3219, verb = "launch"
     [01 00 00 1b 00 00 00 4b] "launch OBJ"
 
-187. 3 entries, verb = "knock", synonyms = "rap"
+187. 3 entries at 3223, verb = "knock", synonyms = "rap"
     [01 fa 00 1e 00 30 00 14] "knock down OBJ"
     [01 f9 00 00 00 00 00 4a] "knock on OBJ"
     [01 f3 00 00 00 00 00 4a] "knock at OBJ"
 
-186. 1 entry, verb = "kiss"
+186. 1 entry at 323d, verb = "kiss"
     [01 00 00 1e 00 30 00 49] "kiss OBJ"
 
-185. 2 entries, verb = "stab"
+185. 2 entries at 3247, verb = "stab"
     [02 00 fe 1e 1d 30 c2 14] "stab OBJ with OBJ"
     [01 00 00 1e 00 30 00 48] "stab OBJ"
 
-184. 2 entries, verb = "dispat", synonyms = "kill", "murder", "slay"
+184. 2 entries at 3259, verb = "dispat", synonyms = "kill", "murder", "slay"
     [02 00 fe 1e 1d 30 c2 14] "dispat OBJ with OBJ"
     [01 00 00 1e 00 30 00 14] "dispat OBJ"
 
-183. 1 entry, verb = "kick", synonyms = "taunt"
+183. 1 entry at 326b, verb = "kick", synonyms = "taunt"
     [01 00 00 00 00 00 00 47] "kick OBJ"
 
-182. 6 entries, verb = "dive", synonyms = "jump", "leap"
+182. 6 entries at 3275, verb = "dive", synonyms = "jump", "leap"
     [01 f4 00 00 00 00 00 46] "dive off OBJ"
     [01 f8 00 00 00 00 00 46] "dive from OBJ"
     [01 fb 00 00 00 00 00 46] "dive in OBJ"
@@ -324,124 +328,126 @@ Story file is gamedat/zork2-r48-s840904.z3
     [01 f6 00 00 00 00 00 46] "dive over OBJ"
     [00 00 00 00 00 00 00 46] "dive"
 
-181. 2 entries, verb = "is"
+181. 2 entries at 32a7, verb = "is"
     [02 00 f9 00 00 00 00 45] "is OBJ on OBJ"
     [02 00 fb 00 00 00 00 45] "is OBJ in OBJ"
 
-180. 1 entry, verb = "inflat"
+180. 1 entry at 32b9, verb = "inflat"
     [02 00 fe 00 1c 00 f0 18] "inflat OBJ with OBJ"
 
-179. 1 entry, verb = "chant", synonyms = "incant"
+179. 1 entry at 32c3, verb = "chant", synonyms = "incant"
     [00 00 00 00 00 00 00 44] "chant"
 
-178. 2 entries, verb = "hello", synonyms = "hi"
+178. 2 entries at 32cd, verb = "hello", synonyms = "hi"
     [01 00 00 00 00 00 00 43] "hello OBJ"
     [00 00 00 00 00 00 00 43] "hello"
 
-177. 1 entry, verb = "hatch"
+177. 1 entry at 32df, verb = "hatch"
     [01 00 00 00 00 00 00 42] "hatch OBJ"
 
-176. 2 entries, verb = "hand"
+176. 2 entries at 32e9, verb = "hand"
     [02 00 00 1e 00 10 86 41] "hand OBJ OBJ"
     [02 00 ff 00 1e 86 10 40] "hand OBJ to OBJ"
 
-175. 2 entries, verb = "donate", synonyms = "feed", "give", "offer"
+175. 2 entries at 32fb, verb = "donate", synonyms = "feed", "give", "offer"
     [02 00 00 1e 00 10 86 41] "donate OBJ OBJ"
     [02 00 ff 00 1e 86 10 40] "donate OBJ to OBJ"
 
-174. 1 entry, verb = "froboz"
+174. 1 entry at 330d, verb = "froboz"
     [00 00 00 00 00 00 00 3f] "froboz"
 
-173. 2 entries, verb = "chase", synonyms = "come", "follow", "pursue"
+173. 2 entries at 3317, verb = "chase", synonyms = "come", "follow", "pursue"
     [01 00 00 00 00 00 00 3e] "chase OBJ"
     [00 00 00 00 00 00 00 3e] "chase"
 
-172. 1 entry, verb = "find", synonyms = "see", "seek", "where"
+172. 1 entry at 3329, verb = "find", synonyms = "see", "seek", "where"
     [01 00 00 00 00 00 00 3d] "find OBJ"
 
-171. 2 entries, verb = "fill"
+171. 2 entries at 3333, verb = "fill"
     [01 00 00 12 00 fa 00 3c] "fill OBJ"
     [02 00 fe 12 00 fa 00 3c] "fill OBJ with OBJ"
 
-170. 1 entry, verb = "douse", synonyms = "exting"
+170. 1 entry at 3345, verb = "douse", synonyms = "exting"
     [01 00 00 13 00 fa 00 17] "douse OBJ"
 
-169. 3 entries, verb = "banish", synonyms = "begone", "cast", "drive", "exorci"
+169. 3 entries at 334f, verb = "banish", synonyms = "begone", "cast", "drive",
+                                                    "exorci"
     [01 f7 00 1e 00 00 00 3b] "banish away OBJ"
     [01 fd 00 1e 00 00 00 3b] "banish out OBJ"
     [01 00 00 00 00 00 00 3b] "banish OBJ"
 
-168. 3 entries, verb = "descri", synonyms = "examin", "what", "whats"
+168. 3 entries at 3369, verb = "descri", synonyms = "examin", "what", "whats"
     [01 f9 00 00 00 f4 00 3a] "descri on OBJ"
     [01 fb 00 00 00 f4 00 3a] "descri in OBJ"
     [01 00 00 00 00 f4 00 39] "descri OBJ"
 
-167. 2 entries, verb = "exit"
+167. 2 entries at 3383, verb = "exit"
     [01 00 00 00 00 00 00 38] "exit OBJ"
     [00 00 00 00 00 00 00 38] "exit"
 
-166. 2 entries, verb = "enter"
+166. 2 entries at 3395, verb = "enter"
     [01 00 00 00 00 00 00 23] "enter OBJ"
     [00 00 00 00 00 00 00 37] "enter"
 
-165. 1 entry, verb = "enchan"
+165. 1 entry at 33a7, verb = "enchan"
     [01 00 00 00 00 30 00 36] "enchan OBJ"
 
-164. 1 entry, verb = "echo"
+164. 1 entry at 33b1, verb = "echo"
     [00 00 00 00 00 00 00 35] "echo"
 
-163. 1 entry, verb = "bite", synonyms = "consum", "eat", "taste"
+163. 1 entry at 33bb, verb = "bite", synonyms = "consum", "eat", "taste"
     [01 00 00 14 00 f8 00 34] "bite OBJ"
 
-162. 4 entries, verb = "drop", synonyms = "releas"
+162. 4 entries at 33c5, verb = "drop", synonyms = "releas"
     [02 00 f9 00 00 86 00 33] "drop OBJ on OBJ"
     [02 00 fb 00 00 86 00 13] "drop OBJ in OBJ"
     [02 00 fa 00 00 86 00 13] "drop OBJ down OBJ"
     [01 00 00 00 00 86 00 32] "drop OBJ"
 
-161. 2 entries, verb = "drink", synonyms = "imbibe", "swallo"
+161. 2 entries at 33e7, verb = "drink", synonyms = "imbibe", "swallo"
     [01 f8 00 00 00 c0 00 31] "drink from OBJ"
     [01 00 00 15 00 f0 00 30] "drink OBJ"
 
-160. 1 entry, verb = "disenc"
+160. 1 entry at 33f9, verb = "disenc"
     [01 00 00 00 00 00 00 2f] "disenc OBJ"
 
-159. 1 entry, verb = "disemb"
+159. 1 entry at 3403, verb = "disemb"
     [01 00 00 1b 00 30 00 2e] "disemb OBJ"
 
-158. 3 entries, verb = "dig"
+158. 3 entries at 340d, verb = "dig"
     [02 fb fe 00 1c 30 c2 2d] "dig in OBJ with OBJ"
     [02 00 fe 00 1c 30 c2 2d] "dig OBJ with OBJ"
     [01 fb 00 00 00 00 00 2d] "dig in OBJ"
 
-157. 3 entries, verb = "block", synonyms = "break", "damage", "destro", "smash"
+157. 3 entries at 3427, verb = "block", synonyms = "break", "damage", "destro",
+                                                   "smash"
     [01 fb 00 00 00 f0 00 2c] "block in OBJ"
     [02 fa fe 00 00 f0 c8 2b] "block down OBJ with OBJ"
     [02 00 fe 00 00 f0 c8 2b] "block OBJ with OBJ"
 
-156. 1 entry, verb = "deflat"
+156. 1 entry at 3441, verb = "deflat"
     [01 00 00 00 00 00 00 2a] "deflat OBJ"
 
-155. 2 entries, verb = "curse", synonyms = "damn", "fuck", "shit"
+155. 2 entries at 344b, verb = "curse", synonyms = "damn", "fuck", "shit"
     [01 00 00 1e 00 00 00 29] "curse OBJ"
     [00 00 00 00 00 00 00 29] "curse"
 
-154. 1 entry, verb = "cut", synonyms = "pierce", "slice"
+154. 1 entry at 345d, verb = "cut", synonyms = "pierce", "slice"
     [02 00 fe 00 1d 00 c0 28] "cut OBJ with OBJ"
 
-153. 1 entry, verb = "cross", synonyms = "ford"
+153. 1 entry at 3467, verb = "cross", synonyms = "ford"
     [01 00 00 00 00 00 00 27] "cross OBJ"
 
-152. 1 entry, verb = "count"
+152. 1 entry at 3471, verb = "count"
     [01 00 00 00 00 00 00 26] "count OBJ"
 
-151. 1 entry, verb = "comman"
+151. 1 entry at 347b, verb = "comman"
     [01 00 00 1e 00 00 00 25] "comman OBJ"
 
-150. 1 entry, verb = "close"
+150. 1 entry at 3485, verb = "close"
     [01 00 00 16 00 f0 00 24] "close OBJ"
 
-149. 8 entries, verb = "climb", synonyms = "sit"
+149. 8 entries at 348f, verb = "climb", synonyms = "sit"
     [01 fe 00 00 00 00 00 23] "climb with OBJ"
     [01 f9 00 1b 00 30 00 22] "climb on OBJ"
     [01 fb 00 1b 00 30 00 1a] "climb in OBJ"
@@ -451,95 +457,96 @@ Story file is gamedat/zork2-r48-s840904.z3
     [01 fc 00 17 00 30 00 1f] "climb up OBJ"
     [01 fc 00 18 00 00 00 1f] "climb up OBJ"
 
-148. 1 entry, verb = "barf", synonyms = "chomp", "lose"
+148. 1 entry at 34d1, verb = "barf", synonyms = "chomp", "lose"
     [00 00 00 00 00 00 00 1e] "barf"
 
-147. 2 entries, verb = "burn", synonyms = "ignite", "incine"
+147. 2 entries at 34db, verb = "burn", synonyms = "ignite", "incine"
     [02 fa fe 1a 19 f0 f2 1d] "burn down OBJ with OBJ"
     [02 00 fe 1a 19 f0 f2 1d] "burn OBJ with OBJ"
 
-146. 1 entry, verb = "bug"
+146. 1 entry at 34ed, verb = "bug"
     [00 00 00 00 00 00 00 1c] "bug"
 
-145. 2 entries, verb = "brush", synonyms = "clean"
+145. 2 entries at 34f7, verb = "brush", synonyms = "clean"
     [02 00 fe 00 00 f0 00 1b] "brush OBJ with OBJ"
     [01 00 00 00 00 f0 00 1b] "brush OBJ"
 
-144. 1 entry, verb = "board"
+144. 1 entry at 3509, verb = "board"
     [01 00 00 1b 00 30 00 1a] "board OBJ"
 
-143. 4 entries, verb = "blow"
+143. 4 entries at 3513, verb = "blow"
     [01 fb 00 00 00 00 00 19] "blow in OBJ"
     [01 fc 00 00 00 00 00 16] "blow up OBJ"
     [02 fc fe 00 1c 00 f0 18] "blow up OBJ with OBJ"
     [01 fd 00 00 00 00 00 17] "blow out OBJ"
 
-142. 1 entry, verb = "blast"
+142. 1 entry at 3535, verb = "blast"
     [00 00 00 00 00 00 00 16] "blast"
 
-141. 1 entry, verb = "back"
+141. 1 entry at 353f, verb = "back"
     [00 00 00 00 00 00 00 15] "back"
 
-140. 2 entries, verb = "attack", synonyms = "fight", "hit", "hurt", "injure"
+140. 2 entries at 3549, verb = "attack", synonyms = "fight", "hit", "hurt",
+                                                    "injure"
     [02 00 fe 1e 1d 30 c2 14] "attack OBJ with OBJ"
     [01 00 00 1e 00 30 00 14] "attack OBJ"
 
-139. 1 entry, verb = "apply"
+139. 1 entry at 355b, verb = "apply"
     [02 00 ff 00 00 00 00 13] "apply OBJ to OBJ"
 
-138. 2 entries, verb = "answer", synonyms = "reply"
+138. 2 entries at 3565, verb = "answer", synonyms = "reply"
     [01 00 00 00 00 00 00 12] "answer OBJ"
     [00 00 00 00 00 00 00 11] "answer"
 
-137. 1 entry, verb = "again", synonyms = "g"
+137. 1 entry at 3577, verb = "again", synonyms = "g"
     [00 00 00 00 00 00 00 10] "again"
 
-136. 1 entry, verb = "activa"
+136. 1 entry at 3581, verb = "activa"
     [01 00 00 1f 00 f0 00 0f] "activa OBJ"
 
-135. 1 entry, verb = "debug"
+135. 1 entry at 358b, verb = "debug"
     [00 00 00 00 00 00 00 0e] "debug"
 
-134. 1 entry, verb = "$ve"
+134. 1 entry at 3595, verb = "$ve"
     [00 00 00 00 00 00 00 0d] "$ve"
 
-133. 1 entry, verb = "versio"
+133. 1 entry at 359f, verb = "versio"
     [00 00 00 00 00 00 00 0c] "versio"
 
-132. 1 entry, verb = "unscri"
+132. 1 entry at 35a9, verb = "unscri"
     [00 00 00 00 00 00 00 0b] "unscri"
 
-131. 1 entry, verb = "script"
+131. 1 entry at 35b3, verb = "script"
     [00 00 00 00 00 00 00 0a] "script"
 
-130. 1 entry, verb = "score"
+130. 1 entry at 35bd, verb = "score"
     [00 00 00 00 00 00 00 09] "score"
 
-129. 1 entry, verb = "save"
+129. 1 entry at 35c7, verb = "save"
     [00 00 00 00 00 00 00 08] "save"
 
-128. 1 entry, verb = "restor"
+128. 1 entry at 35d1, verb = "restor"
     [00 00 00 00 00 00 00 07] "restor"
 
-127. 1 entry, verb = "restar"
+127. 1 entry at 35db, verb = "restar"
     [00 00 00 00 00 00 00 06] "restar"
 
-126. 1 entry, verb = "q", synonyms = "quit"
+126. 1 entry at 35e5, verb = "q", synonyms = "quit"
     [00 00 00 00 00 00 00 05] "q"
 
-125. 1 entry, verb = "i", synonyms = "invent"
+125. 1 entry at 35ef, verb = "i", synonyms = "invent"
     [00 00 00 00 00 00 00 04] "i"
 
-124. 1 entry, verb = "diagno"
+124. 1 entry at 35f9, verb = "diagno"
     [00 00 00 00 00 00 00 03] "diagno"
 
-123. 1 entry, verb = "super", synonyms = "superb"
+123. 1 entry at 3603, verb = "super", synonyms = "superb"
     [00 00 00 00 00 00 00 02] "super"
 
-122. 1 entry, verb = "brief"
+122. 1 entry at 360d, verb = "brief"
     [00 00 00 00 00 00 00 01] "brief"
 
-121. 1 entry, verb = "verbos"
+121. 1 entry at 3617, verb = "verbos"
     [00 00 00 00 00 00 00 00] "verbos"
 
     **** Verb action routines ****
