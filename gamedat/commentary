@@ -264,7 +264,7 @@ src:ZORK2-34: Notice something missing? There’s no `IFILE` line (“include fi
 	Furthermore, when I analyzed the game file, I found that functions were *not* generated in the order of the `IFILE` lines here. (In Zork 1, functions *were* generated in `IFILE` order.)
 	My best guess is that the zork2.zil file was rewritten after July 26 1984, but the game was never recompiled.
 
-glob:ZPROB: This function is never called.
+rtn:ZPROB: This function is never called.
 	Every die-roll in Zork 2 uses the one-argument form of [PROB|~src:GMACROS-118]. That’s compiled as an inlined `@RANDOM` opcode, not `ZPROB`.
 	`ZPROB` has extra logic to decrease your chance of success if you are un-[glob:LUCKY]. But nothing in the game makes you un-[glob:LUCKY], so this is never needed.
 
