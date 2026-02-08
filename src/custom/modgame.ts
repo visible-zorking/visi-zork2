@@ -1,6 +1,7 @@
-import { gamedat_routine_names, gamedat_global_names, gamedat_string_map, unpack_address } from './gamedat';
-import { spellconstmap } from './cwidgets';
+import { unpack_address } from '../visi/gametypes';
 import { GnustoEngine } from '../visi/zstate';
+import { gamedat_routine_names, gamedat_global_names, gamedat_string_map } from './gamedat';
+import { spellconstmap } from './cwidgets';
 
 export function show_commentary_hook(topic: string, engine: GnustoEngine): string|null
 {
