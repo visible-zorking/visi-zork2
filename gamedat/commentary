@@ -171,6 +171,11 @@ src:2ACTIONS-176: This section handles much of the [~obj:RECEPTACLE] logic. Howe
 src:2ACTIONS-271: The description aligns neatly with the [CANYON-VIEW|relative:../zork1/#OBJ:CANYON-VIEW] in Zork 1.
 
 
+src:2ACTIONS-2480: This check prevents the dragon from following you into the Ledge, the Fresco Room, or the Carousel Room. This effectively hems him into a few rooms (Dragon Room, Stone Bridge, Cool Room, Ice Room).
+	...Except there's a hole in the logic. If you raise [~glob:DRAGON-ANGER] to 4, it will take *two* turns to decline to zero -- which means you can move *through* one of the blocked rooms. The dragon will still follow you to the far side. This allows you to bring the dragon practically anywhere in the game.
+	(c:Torbjörn Andersson)
+
+
 obj:COIN: The source has wonderful ASCII-art renditions of some of the treasures. These are carried over from MIT Zork, but they are commented out here – no doubt to save space.
 	The art doesn’t render very well in the source pane, but you can see the original coin [here|relative:pic/coin-art.png].
 
