@@ -134,6 +134,15 @@ rtn:I-LANTERN: This routine sits in the timers table. When it fires, it prints a
 
 glob:LAMP-TABLE: This table shows the successive stages of the lamp going out. The *first* stage is 200 turns, which is set in [~rtn:GO], not here.
 
+rtn:I-MATCH: This routine runs every turn the match is lit – which is not very long; it only burns for one turn. ([Two|~src:2ACTIONS-1888], including the turn you light it.)
+	But see [this bug|src:2ACTIONS-3956].
+
+rtn:KILL-INTERRUPTS: If you die, the game shuts down active timers. This prevents strange lingering events (like gnome or dragon activity) after you emerge from the “afterlife” of the spheres.
+	But see [this bug|src:2ACTIONS-3956].
+
+src:2ACTIONS-3956: The game shuts down [rtn:I-MATCH] when you die. This is good, in that you don’t get spurious messages about the match going out in the afterlife. But it’s bad in that the matchbook is left with [attr:ONBIT]! You can use it as a permanent light source thereafter.
+	(c:Monica Morse)
+
 rtn:I-WIZARD: This routine is the [~obj:WIZARD]’s heartbeat. Every four turns (normally), he has a chance of showing up and casting something irritating on you. The Wizard also has a number of other possible reactions, depending on your current situation.
 	Once a spell has been cast on you, this routine acts as the timer for its expiration. Then it goes back to handling the Wizard.
 	(Want to [test the Wizard’s spells|TRY-SPELL]?)
