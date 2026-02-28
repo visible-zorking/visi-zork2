@@ -394,7 +394,7 @@ Global 45 PUNLOCK-FLAG
 Global 46 MATOBJ  OBJ
 Global 47 MUD-FLAG
 Global 48 ZGNOME-FLAG
-Global 49 SCOL-ACTIVE
+Global 49 SCOL-ACTIVE  OBJ
 Global 50 SCOL-ROOM  OBJ
 Global 51 SCOL-WALLS  DATA
 Global 52 SCOL-ROOMS  DATA
@@ -530,6 +530,7 @@ RoutineType - FIND-TARGET OBJ
 RoutineType - HELD? OBJ
 RoutineType - HELLO? OBJ
 RoutineType - JIGS-UP STR -
+### LKP arg is PROP for SCOL-ROOMS
 RoutineType - LKP OBJ TABLE
 RoutineType - OPEN-CLOSE OBJ STR STR
 RoutineType - ORPHAN GLINE GLINE
