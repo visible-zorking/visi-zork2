@@ -490,8 +490,7 @@ Global 139 P-CCSRC
 Global 140 P-SYNTAX  GLINE
 Global 141 P-ONEOBJ  WORD
 Global 142 P-TABLE
-### PRSO is a property when PRSA is WALK. Tweak?
-Global 143 PRSO  OBJ
+Global 143 PRSO  PRSO
 Global 144 PRSI  OBJ
 Global 145 PRSA  ACTION
 Global 146 GWIM-DISABLE  UNUSED
