@@ -200,12 +200,19 @@ obj:PORTRAIT: The source has wonderful ASCII-art renditions of some of the treas
 
 glob:SCOL-ROOM: The room to which the [~obj:CURTAIN] will take you. The is determined by the direction you entered the Depository *from*. See [rtn:DEPOSITORY-FCN].
 
-glob:SCOL-ACTIVE: The room that the [~obj:CURTAIN] took you *to*. This determines which room supports curtain-return travel.
+glob:SCOL-ACTIVE: The room that the [~obj:CURTAIN] took you *to*. This determines which room supports curtain-return travel. See [rtn:GET-WALL].
 
 rtn:DEPOSITORY-FCN: This is the critical step in determining the curtain’s behavior. When you enter the Depository, this checks the direction you just entered *from* (in [~glob:PRSO]). It then sets [glob:SCOL-ROOM] (the curtain destination) accordingly, based on the [glob:SCOL-ROOMS] table.
 
 glob:SCOL-ROOMS: This table shows the room to which the [~obj:CURTAIN] will take you, based on the direction you entered the Depository *from*. See [rtn:DEPOSITORY-FCN].
 	“SCOL” refers to the “shimmering curtain of light,” in case you were wondering.
+
+glob:SCOL-WALLS: This table defines how you can return to the Depository after walking through the curtain. It’s organized in rows of three values: curtain destination ([glob:SCOL-ACTIVE]), a directional wall, and a *new* curtain destination ([glob:SCOL-ROOM]).
+	This is complicated – possibly unnecessarily so. See [rtn:GET-WALL].
+
+rtn:GET-WALL: This looks up an entry in the [glob:SCOL-WALLS] table. It is always used to search based on [glob:SCOL-ACTIVE], the room the curtain last took you *to*.
+	The entry returned contains two pieces of information: the wall you can return to the Depository through, and the *new* destination of the curtain once you do that.
+	(The latter matches the behavior of [rtn:DEPOSITORY-FCN]. I’m pretty sure it’s not needed, in fact. The [V-THROUGH|~src:GVERBS-1375] routine sets [~glob:PRSO] to match the wall direction, so [rtn:DEPOSITORY-FCN] should do its job and set [glob:SCOL-ROOM] correctly.)
 
 glob:BANK-SOLVE-FLAG: This flag is set when you acquire the [~obj:BILLS], but it’s never used for anything.
 
