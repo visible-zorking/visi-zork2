@@ -198,9 +198,16 @@ obj:PORTRAIT: The source has wonderful ASCII-art renditions of some of the treas
 	The art doesn’t render very well in the source pane, but you can see the original portrait [here|relative:pic/portrait-art.png].
 
 
-glob:SCOL-ROOM: The room that you entered the Depository *from*. This determines where the [~obj:CURTAIN] takes you.
+glob:SCOL-ROOM: The room to which the [~obj:CURTAIN] will take you. The is determined by the direction you entered the Depository *from*. See [rtn:DEPOSITORY-FCN].
 
 glob:SCOL-ACTIVE: The room that the [~obj:CURTAIN] took you *to*. This determines which room supports curtain-return travel.
+
+rtn:DEPOSITORY-FCN: This is the critical step in determining the curtain’s behavior. When you enter the Depository, this checks the direction you just entered *from* (in [~glob:PRSO]). It then sets [glob:SCOL-ROOM] (the curtain destination) accordingly, based on the [glob:SCOL-ROOMS] table.
+
+glob:SCOL-ROOMS: This table shows the room to which the [~obj:CURTAIN] will take you, based on the direction you entered the Depository *from*. See [rtn:DEPOSITORY-FCN].
+	“SCOL” refers to the “shimmering curtain of light,” in case you were wondering.
+
+glob:BANK-SOLVE-FLAG: This flag is set when you acquire the [~obj:BILLS], but it’s never used for anything.
 
 
 obj:DIAMOND-5: The Map tab shows the rooms as laid out by their direction properties. ([~obj:DIAMOND-2] is `NORTH` of [~obj:DIAMOND-5] and so on.) But the puzzle solution has nothing to do with this layout! See [rtn:DIAMOND-MOTION].
