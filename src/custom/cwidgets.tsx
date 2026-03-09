@@ -128,6 +128,17 @@ export function stack_call_arg_display(tag: string, value: number) : JSX.Element
         return (
             <ArgShowObject value={ value } />
         )
+
+    case 'LKPITM': 
+        let ctx2 = useContext(StackCallCtx);
+        if (ctx2.args[1] == 10849) {    /* global SCOL-ROOMS */
+            return (
+                <ArgShowProperty value={ value } />
+            );
+        }
+        return (
+            <ArgShowObject value={ value } />
+        )
     }
 
     return null;

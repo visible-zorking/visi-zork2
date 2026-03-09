@@ -529,8 +529,7 @@ RoutineType - FIND-TARGET OBJ
 RoutineType - HELD? OBJ
 RoutineType - HELLO? OBJ
 RoutineType - JIGS-UP STR -
-### LKP arg is PROP for SCOL-ROOMS
-RoutineType - LKP OBJ TABLE
+RoutineType - LKP LKPITM TABLE
 RoutineType - OPEN-CLOSE OBJ STR STR
 RoutineType - ORPHAN GLINE GLINE
 RoutineType - P-DOOR STR OBJ OBJ
