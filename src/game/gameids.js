@@ -10,13 +10,13 @@
  */
 function gamedat_ids_general(gamedat_ids)
 {
-    gamedat_ids.GAMEID = 'zork1-r88-s840726';
+    gamedat_ids.GAMEID = 'zork2-r48-s840904';
     gamedat_ids.MAX_OBJECTS = 250;         // "Object count"
-    gamedat_ids.MAX_GLOBALS = 158;         // 1+LastGlobal
-    gamedat_ids.DICT_START = 15137;        // header word $08
+    gamedat_ids.MAX_GLOBALS = 170;         // 1+LastGlobal
+    gamedat_ids.DICT_START = 0x38B7;       // header word $08
     gamedat_ids.DICT_WORD_SIZE = 7;
-    gamedat_ids.PROP_TABLE_START = 0x0BB8; // prop address for first obj
-    gamedat_ids.PROP_TABLE_END = 0x2270;   // just before globals, header $0C-1
+    gamedat_ids.PROP_TABLE_START = 0x0BB0; // prop address for first obj
+    gamedat_ids.PROP_TABLE_END = 0x22E4;   // just before globals, header $0C-1
 }
 
 /* Set up values defined in the ZIL code. This must be called after
@@ -30,9 +30,13 @@ function gamedat_ids_specific(gamedat_ids)
     gamedat_ids.GLOBAL_OBJECTS = gamedat_object_names.get('GLOBAL-OBJECTS').onum;
     gamedat_ids.LOCAL_GLOBALS = gamedat_object_names.get('LOCAL-GLOBALS').onum;
     gamedat_ids.ADVENTURER = gamedat_object_names.get('ADVENTURER').onum;
-    gamedat_ids.THIEF = gamedat_object_names.get('THIEF').onum;
-    gamedat_ids.TROLL = gamedat_object_names.get('TROLL').onum;
-    gamedat_ids.STARTROOM = gamedat_object_names.get('WEST-OF-HOUSE').onum;
+    gamedat_ids.WIZARD = gamedat_object_names.get('WIZARD').onum;
+    gamedat_ids.GENIE = gamedat_object_names.get('GENIE').onum;
+    gamedat_ids.ROBOT = gamedat_object_names.get('ROBOT').onum;
+    gamedat_ids.UNICORN = gamedat_object_names.get('UNICORN').onum;
+    gamedat_ids.PRINCESS = gamedat_object_names.get('PRINCESS').onum;
+    gamedat_ids.DRAGON = gamedat_object_names.get('DRAGON').onum;
+    gamedat_ids.STARTROOM = gamedat_object_names.get('INSIDE-BARROW').onum;
     gamedat_ids.PSEUDO_OBJECT = gamedat_object_names.get('PSEUDO-OBJECT').onum;
 
     /* Ordering of objects in the World pane. This doesn't change much between
