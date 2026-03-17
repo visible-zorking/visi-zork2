@@ -13,7 +13,7 @@ import { ObjectPage } from '../visi/objpage';
 import { GlobalState } from '../visi/globstate';
 import { SourceFileList } from '../visi/filelist';
 import { AboutPage } from './about';
-import { gamedat_ids } from './gamedat';
+import { gamedat_ids } from '../visi/gamedat';
 
 const tab_list = [
     [ 'activity', 'Activity' ],
