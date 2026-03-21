@@ -5,9 +5,11 @@
   "author": "Andrew Plotkin <erkyrath@eblong.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npm run minify && npm run buildts",
+    "buildall": "npm run buildjs && npm run builddata",
+    "buildjs": "npm run minify && npm run buildts",
     "buildts": "npx tsc && npx rollup -c",
     "minify": "./minify gamedat.js && ./minify lib.js && ./minify glkio.js && ./minify ifvms.js && ./minify gnusto.js && ./minify parchment.js",
+    "builddata": "npm run recreate-gamedata && npm run rearrange-tables && npm run recolor-source && npm run regenerate-commentary && npm run reparse-map",
     "recreate-gamedata": "python3 visiterp/pyana/parse.py --game zork2-r48-s840904 -z gamesrc/zork2.zil --obj --dict --grammar --txd --gamedat",
     "rearrange-tables": "python3 visiterp/pyana/parse.py --game zork2-r48-s840904 -z gamesrc/zork2.zil --zcode gamedat/zork2-r48-s840904.z3 --gamedat",
     "recolor-source": "python3 visiterp/pyana/parse.py --game zork2-r48-s840904 -z gamesrc/zork2.zil --src",
