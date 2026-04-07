@@ -291,6 +291,8 @@ src:2ACTIONS-2937: Trying to unlock the door while the lizard is awake gives a 5
 
 obj:IN-AQUARIUM: You can’t enter the aquarium (and live). The room only exists to provide a description for peering into the blue sphere.
 
+src:2ACTIONS-3664: This should handle the command `DEMON, OPEN TROPHY CASE` (or `BREAK`) but [~rtn:GENIE-FCN] doesn’t let that through.
+
 
 FILES-LEGEND: The last file, crufty.zil, is a bit odd. See [this note|src:ZORK2-34].
 
