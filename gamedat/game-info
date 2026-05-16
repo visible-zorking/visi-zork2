@@ -525,6 +525,7 @@ RoutineType - CLAUSE - - WORD
 RoutineType - DO-WALK PROP
 RoutineType - GO-NEXT TABLE
 RoutineType - GWIM - - PREP
+RoutineType - FIND-IN OBJ ATTR
 RoutineType - FIND-TARGET OBJ
 RoutineType - HELD? OBJ
 RoutineType - HELLO? OBJ
